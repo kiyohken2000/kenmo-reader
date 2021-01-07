@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "slug": "react-native-boilerplate",
+    "name": "kenmo-reader",
+    "slug": "kenmo-reader",
     "privacy": "public",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
