@@ -81,7 +81,7 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{text}": [
       "pretty-quick --staged",
       "yarn lint",
       "yarn test"
