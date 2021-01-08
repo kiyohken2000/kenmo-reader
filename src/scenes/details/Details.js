@@ -22,10 +22,12 @@ const styles = StyleSheet.create({
 
 const Details = ({ route, navigation }) => {
   const from = route?.params?.from
+  const from2 = route?.params?.from2
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content" />
       <Text style={styles.title}>{`Details (from ${from})`}</Text>
+      <Text>{`join as from ${from2}`}</Text>
       <Button
         title="Go Back"
         color="white"

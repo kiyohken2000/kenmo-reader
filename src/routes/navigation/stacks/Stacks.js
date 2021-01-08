@@ -4,7 +4,11 @@ import { colors } from 'theme'
 import Home from 'scenes/home'
 import Profile from 'scenes/profile'
 import Details from 'scenes/details'
-import HeaderLeft from './HeaderLeft'
+
+import NewsList from 'scenes/newslist'
+import Article from 'scenes/article'
+
+// import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
 
 // ------------------------------------
@@ -34,7 +38,7 @@ export const HomeNavigator = () => (
       component={Home}
       options={({ navigation }) => ({
         title: 'Home',
-        headerLeft: () => <HeaderLeft navigation={navigation} />,
+        // headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerTitle: () => <HeaderTitle />,
       })}
     />
@@ -43,7 +47,7 @@ export const HomeNavigator = () => (
       component={Details}
       options={({ navigation }) => ({
         title: 'Home',
-        headerLeft: () => <HeaderLeft navigation={navigation} />,
+        // headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerTitle: () => <HeaderTitle />,
       })}
     />
@@ -61,7 +65,7 @@ export const ProfileNavigator = () => (
       component={Profile}
       options={({ navigation }) => ({
         title: 'Profile',
-        headerLeft: () => <HeaderLeft navigation={navigation} />,
+        // headerLeft: () => <HeaderLeft navigation={navigation} />,
         headerTitle: () => <HeaderTitle />,
       })}
     />
@@ -71,6 +75,31 @@ export const ProfileNavigator = () => (
       options={{
         title: 'Details',
       }}
+    />
+  </Stack.Navigator>
+)
+
+export const NewsListNavigator = () => (
+  <Stack.Navigator
+    initialRouteName="NewsList"
+    headerMode="screen"
+    screenOptions={navigationProps}
+  >
+    <Stack.Screen
+      name="NewsList"
+      component={NewsList}
+      options={({ navigation }) => ({
+        title: 'NewsList',
+        headerTitle: () => <HeaderTitle />,
+      })}
+    />
+    <Stack.Screen
+      name="Article"
+      component={Article}
+      options={({ navigation }) => ({
+        title: 'NewsList',
+        headerTitle: () => <HeaderTitle />,
+      })}
     />
   </Stack.Navigator>
 )

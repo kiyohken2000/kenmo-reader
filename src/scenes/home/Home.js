@@ -29,7 +29,7 @@ const Home = ({ navigation }) => (
       color="white"
       backgroundColor={colors.lightPurple}
       onPress={() => {
-        navigation.navigate('Details', { from: 'Home' })
+        navigation.navigate('Details', { from: 'Home' , from2: 'homehome' })
       }}
     />
   </View>
