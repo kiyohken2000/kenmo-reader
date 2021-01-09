@@ -60,7 +60,9 @@ export default class NewsList extends React.Component {
 						dataArray={items}
 						renderRow={
 							(item) =>
-							<ListItem onPress={() => {this.openUrl(item.url)}}>
+							<ListItem
+								onPress={() => this.props.navigation.navigate('Article', { url: item.url })}
+							>
 								<Thumbnail square size={80} source={{ uri: item.thumbnail }} />
 								<Text>{item.title}</Text>
 							</ListItem>} >
