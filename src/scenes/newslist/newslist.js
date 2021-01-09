@@ -33,7 +33,7 @@ export default class NewsList extends React.Component {
 
 
 	componentDidMount() {
-		fetch('http://loumo.jp/wp-json/wp/v2/posts?_embed')
+		fetch('https://hosyusokuhou.jp/wp-json/wp/v2/posts?_embed')
 			.then((response) => response.json())
 			.then((responseJson) => {
 				for(var i in responseJson) {
@@ -47,10 +47,6 @@ export default class NewsList extends React.Component {
 			});
 	}
 
-	openUrl(url) {
-		this.props.navigation.navigate('Article', { url: url })
-	}
-
 	render() {
 		var items = this.state.items;
 		return (
@@ -61,7 +57,7 @@ export default class NewsList extends React.Component {
 						renderRow={
 							(item) =>
 							<ListItem
-								onPress={() => this.props.navigation.navigate('Article', { url: item.url })}
+								onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content })}
 							>
 								<Thumbnail square size={80} source={{ uri: item.thumbnail }} />
 								<Text>{item.title}</Text>
