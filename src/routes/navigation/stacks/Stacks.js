@@ -7,6 +7,7 @@ import Details from 'scenes/details'
 
 import NewsList from 'scenes/newslist'
 import Article from 'scenes/article'
+import Sites from 'scenes/sites'
 
 // import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
@@ -81,10 +82,18 @@ export const ProfileNavigator = () => (
 
 export const NewsListNavigator = () => (
   <Stack.Navigator
-    initialRouteName="NewsList"
+    initialRouteName="Sites"
     headerMode="screen"
     screenOptions={navigationProps}
   >
+    <Stack.Screen
+      name="Sites"
+      component={Sites}
+      options={({ navigation }) => ({
+        title: 'Sites',
+        headerTitle: () => <HeaderTitle />,
+      })}
+    />
     <Stack.Screen
       name="NewsList"
       component={NewsList}
