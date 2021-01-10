@@ -34,11 +34,11 @@ const sites = [
     name: 'watch@2チャンネル',
     url: 'http://www.watch2chan.com'
   },
-  {
+  /*{
     ID: 8,
     name: 'やらおん！*',
     url: 'http://yaraon-blog.com'
-  },
+  },*/
   {
     ID: 9,
     name: '秒刊SUNDAY',
@@ -54,11 +54,11 @@ const sites = [
     name: 'NETGEEK',
     url: 'http://netgeek.biz'
   },
-  {
+  /*{
     ID: 12,
     name: '9ポスト*',
     url: 'https://9post.tv'
-  },
+  },*/
   {
     ID: 13,
     name: 'Temita-てみた',
