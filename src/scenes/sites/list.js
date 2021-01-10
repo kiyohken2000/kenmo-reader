@@ -26,78 +26,48 @@ const sites = [
   },
   {
     ID: 6,
-    name: '菊の門ニュース2',
-    url: 'https://kikunomon.news'
+    name: 'ロケットニュース24',
+    url: 'https://rocketnews24.com'
   },
   {
     ID: 7,
-    name: '保守速報2',
-    url: 'https://hosyusokuhou.jp'
+    name: 'watch@2チャンネル',
+    url: 'http://www.watch2chan.com'
   },
   {
     ID: 8,
-    name: 'VIDEOCARDZ2',
-    url: 'https://videocardz.com'
+    name: 'やらおん！*',
+    url: 'http://yaraon-blog.com'
   },
   {
     ID: 9,
-    name: 'kitguru2',
-    url: 'https://www.kitguru.net'
+    name: '秒刊SUNDAY',
+    url: 'https://yukawanet.com'
   },
   {
     ID: 10,
-    name: 'wccftech2',
-    url: 'https://wccftech.com'
+    name: 'BUZZmag (ばずまぐ)',
+    url: 'https://buzzmag.jp'
   },
   {
     ID: 11,
-    name: '菊の門ニュース3',
-    url: 'https://kikunomon.news'
+    name: 'NETGEEK',
+    url: 'http://netgeek.biz'
   },
   {
     ID: 12,
-    name: '保守速報3',
-    url: 'https://hosyusokuhou.jp'
+    name: '9ポスト*',
+    url: 'https://9post.tv'
   },
   {
     ID: 13,
-    name: 'VIDEOCARDZ3',
-    url: 'https://videocardz.com'
+    name: 'Temita-てみた',
+    url: 'https://temita.jp'
   },
   {
     ID: 14,
-    name: 'kitguru3',
-    url: 'https://www.kitguru.net'
-  },
-  {
-    ID: 15,
-    name: 'wccftech3',
-    url: 'https://wccftech.com'
-  },
-  {
-    ID: 16,
-    name: '菊の門ニュース4',
-    url: 'https://kikunomon.news'
-  },
-  {
-    ID: 17,
-    name: '保守速報4',
-    url: 'https://hosyusokuhou.jp'
-  },
-  {
-    ID: 18,
-    name: 'VIDEOCARDZ4',
-    url: 'https://videocardz.com'
-  },
-  {
-    ID: 19,
-    name: 'kitguru4',
-    url: 'https://www.kitguru.net'
-  },
-  {
-    ID: 20,
-    name: 'wccftech4',
-    url: 'https://wccftech.com'
+    name: 'BUSHOO!JAPAN',
+    url: 'https://bushoojapan.com'
   },
 ]
 
