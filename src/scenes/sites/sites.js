@@ -52,7 +52,7 @@ export default class Sites extends React.Component {
 		return (
       <View style={styles.container}>
         <View style={styles.content}>
-			    <ScrollView>
+			    <ScrollView contentContainerStyle={styles.scrollContentContainer}>
             {
               viewSites.map((u, i) => {
                 return (
@@ -100,10 +100,12 @@ export default class Sites extends React.Component {
           presentationStyle={"fullScreen" || "pageSheet" || "formSheet" || "overFullScreen"}
         >
           <View style={styles.container}>
-            <Card>
-              <Text>利用可能なサイトの一覧です</Text>
-            </Card>
-            <ScrollView>
+            <View style={styles.modaltitle}>
+              <Card>
+                <Text>利用可能なサイトの一覧です</Text>
+              </Card>
+            </View>
+            <ScrollView contentContainerStyle={styles.scrollContentContainer}>
               {
                 sites.map((u, i) => {
                  return (
@@ -167,4 +169,10 @@ const styles = StyleSheet.create({
     right: 30,
     justifyContent: "center",
   },
+  scrollContentContainer: {
+    paddingBottom: 75,
+  },
+  modaltitle: {
+    paddingTop: 40,
+  }
 });

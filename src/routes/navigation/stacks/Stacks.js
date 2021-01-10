@@ -91,7 +91,6 @@ export const NewsListNavigator = () => (
       component={Sites}
       options={({ navigation }) => ({
         title: 'Sites',
-        headerTitle: () => <HeaderTitle />,
       })}
     />
     <Stack.Screen
@@ -99,15 +98,13 @@ export const NewsListNavigator = () => (
       component={NewsList}
       options={({ navigation }) => ({
         title: 'NewsList',
-        headerTitle: () => <HeaderTitle />,
       })}
     />
     <Stack.Screen
       name="Article"
       component={Article}
       options={({ navigation }) => ({
-        title: 'NewsList',
-        headerTitle: () => <HeaderTitle />,
+        title: 'Article',
       })}
     />
   </Stack.Navigator>
