@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, ScrollView, TouchableOpacity, StyleSheet, Modal } from 'react-native'
+import { Text, View, ScrollView, TouchableOpacity, StyleSheet, Modal, StatusBar, Linking } from 'react-native'
 import { Card, ListItem, Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Feather'
 import Storage from 'react-native-storage'
@@ -51,6 +51,7 @@ export default class Sites extends React.Component {
     var viewSites = this.state.data
 		return (
       <View style={styles.container}>
+        <StatusBar barStyle="light-content" />
         <View style={styles.content}>
 			    <ScrollView contentContainerStyle={styles.scrollContentContainer}>
             {
@@ -62,9 +63,7 @@ export default class Sites extends React.Component {
                     >
                       <View style={{ flexDirection: 'row'}}>
                         <View>
-                          <Text>{u.siteid}</Text>
-                          <Text>{u.name}</Text>
-                          <Text>{u.url}</Text>
+                          <Text style={styles.name}>{u.name}</Text>
                         </View>
                         <View style={{ position: 'absolute', right: 0 }}>
                           <TouchableOpacity
@@ -111,30 +110,33 @@ export default class Sites extends React.Component {
                  return (
                   <Card key={i}>
                     <View style={{ flexDirection: 'row'}}>
-                      <View>
-                        <Text>{u.ID}</Text>
-                        <Text>{u.name}</Text>
-                        <Text>{u.url}</Text>
-                      </View>
-                      <View style={{ position: 'absolute', right: 0 }}>
-                        <TouchableOpacity
-                          onPress={() => {
-                            var siteData = {
-                              siteid: u.ID,
-                              name: u.name,
-                              url: u.url,
-                            }
-                            global.storage.save({
-                              key: 'site',
-                              id: u.ID,
-                              data: siteData,
-                            });
-                            this.loadStrage()
-                          }}
-                        >
-                          <Icon name="plus-circle" size={40} color="orange"/>
-                        </TouchableOpacity>
-                      </View>
+                      <Text style={styles.name}>{u.name}</Text>
+                          <View style={{ position: 'absolute', right: 60 }}>
+                            <TouchableOpacity
+                              onPress={ ()=>{ Linking.openURL(u.url)}}
+                            >
+                              <Icon name="external-link" size={40} color="black"/>
+                            </TouchableOpacity>
+                          </View>
+                          <View style={{ position: 'absolute', right: 0 }}>
+                            <TouchableOpacity
+                              onPress={() => {
+                                var siteData = {
+                                  siteid: u.ID,
+                                  name: u.name,
+                                  url: u.url,
+                                }
+                                global.storage.save({
+                                  key: 'site',
+                                  id: u.ID,
+                                  data: siteData,
+                                });
+                                this.loadStrage()
+                              }}
+                            >
+                              <Icon name="plus-circle" size={40} color="orange"/>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                   </Card>
                   );
@@ -170,9 +172,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   scrollContentContainer: {
-    paddingBottom: 75,
+    paddingBottom: 85,
   },
   modaltitle: {
     paddingTop: 40,
+  },
+  name: {
+    fontSize: 18,
+    fontWeight: 'bold',
   }
 });

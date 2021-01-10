@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
 import HTML from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 
@@ -11,6 +11,7 @@ export default class Article extends React.Component {
 		const title = this.props.route.params.title
 		return (
 			<View style={styles.container}>
+				<StatusBar barStyle="light-content" />
 				<View style={styles.content}>
 					<ScrollView contentContainerStyle={styles.scrollContentContainer}>
 						<Text style={styles.paragraph}>

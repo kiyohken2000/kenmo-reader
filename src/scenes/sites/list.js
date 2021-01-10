@@ -49,6 +49,56 @@ const sites = [
     name: 'wccftech2',
     url: 'https://wccftech.com'
   },
+  {
+    ID: 11,
+    name: '菊の門ニュース3',
+    url: 'https://kikunomon.news'
+  },
+  {
+    ID: 12,
+    name: '保守速報3',
+    url: 'https://hosyusokuhou.jp'
+  },
+  {
+    ID: 13,
+    name: 'VIDEOCARDZ3',
+    url: 'https://videocardz.com'
+  },
+  {
+    ID: 14,
+    name: 'kitguru3',
+    url: 'https://www.kitguru.net'
+  },
+  {
+    ID: 15,
+    name: 'wccftech3',
+    url: 'https://wccftech.com'
+  },
+  {
+    ID: 16,
+    name: '菊の門ニュース4',
+    url: 'https://kikunomon.news'
+  },
+  {
+    ID: 17,
+    name: '保守速報4',
+    url: 'https://hosyusokuhou.jp'
+  },
+  {
+    ID: 18,
+    name: 'VIDEOCARDZ4',
+    url: 'https://videocardz.com'
+  },
+  {
+    ID: 19,
+    name: 'kitguru4',
+    url: 'https://www.kitguru.net'
+  },
+  {
+    ID: 20,
+    name: 'wccftech4',
+    url: 'https://wccftech.com'
+  },
 ]
 
 export default sites;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, StatusBar } from 'react-native'
+import { Text, View, StatusBar, StyleSheet } from 'react-native'
 import { List, ListItem, Thumbnail, Container, Content } from 'native-base'
 import Spinner from 'react-native-loading-spinner-overlay'
 import Button from 'components/Button'
@@ -10,6 +10,7 @@ class WPPost {
 		this.post = post;
 		this.title = post.title.rendered;
 		this.content = post.content.rendered;
+		this.date = post.date;
 		// this.thumbnail = this.getThumbnail();
 		this.url = post.link;
 	}
@@ -54,7 +55,7 @@ export default class NewsList extends React.Component {
 	render() {
 		var items = this.state.items;
 		return (
-			<View>
+			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
 					<Spinner
           	visible={this.state.spinner}
@@ -62,18 +63,40 @@ export default class NewsList extends React.Component {
             textStyle={{ color: "#fff" }}
             overlayColor="rgba(0,0,0,0.5)"
         	/>
-					<List
-						dataArray={items}
-						renderRow={
-							(item) =>
-							<ListItem
-								onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title })}
-							>
-								{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
-								<Text>{item.title}</Text>
-							</ListItem>} >
-					</List>
+					<View style={styles.content}>
+						<List
+							dataArray={items}
+							renderRow={
+								(item) =>
+								<ListItem
+									onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title })}
+								>
+									{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
+									<View>
+										<Text style={styles.title}>{item.title}</Text>
+										<Text style={styles.date}>{item.date}</Text>
+									</View>
+								</ListItem>} >
+						</List>
+					</View>
 			</View>
 		);
 	}
 }
+
+const styles = StyleSheet.create({
+	container: {
+    flex: 1,
+  },
+  content: {
+		flex: 1,
+		marginBottom: 70,
+	},
+	title: {
+    fontSize: 14,
+	},
+	date: {
+    fontSize: 11,
+    textAlign: 'right',
+	}
+});
