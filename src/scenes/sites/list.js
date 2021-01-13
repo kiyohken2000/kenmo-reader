@@ -69,6 +69,51 @@ const sites = [
     name: 'BUSHOO!JAPAN',
     url: 'https://bushoojapan.com'
   },
+  {
+    ID: 15,
+    name: 'FatherLog',
+    url: 'https://fatherlog.com'
+  },
+  {
+    ID: 16,
+    name: 'misclog（ミスクログ）',
+    url: 'https://misc-log.com'
+  },
+  {
+    ID: 17,
+    name: '４０代からの挑戦！',
+    url: 'https://40chousennsya.com'
+  },
+  {
+    ID: 18,
+    name: 'ゴリミー',
+    url: 'https://gori.me'
+  },
+  {
+    ID: 19,
+    name: 'リブウェル！',
+    url: 'https://livewell-m.com'
+  },
+  {
+    ID: 20,
+    name: 'iPhone Mania',
+    url: 'https://iphone-mania.jp'
+  },
+  {
+    ID: 21,
+    name: 'iTea4.0',
+    url: 'http://itea40.jp'
+  },
+  {
+    ID: 22,
+    name: 'Tokyo Mac Blog',
+    url: 'https://tyomac.com/blog'
+  },
+  {
+    ID: 23,
+    name: 'Linkman',
+    url: 'https://link-man.net'
+  },
 ]
 
 export default sites;
