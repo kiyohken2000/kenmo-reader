@@ -100,9 +100,16 @@ export default class Sites extends React.Component {
         >
           <View style={styles.container}>
             <View style={styles.modaltitle}>
-              <Card>
-                <Text>利用可能なサイトの一覧です</Text>
-              </Card>
+            <Card>
+              <View style={{ flexDirection: 'row'}}>
+                <View>
+                  <Text>利用可能なサイトの一覧です</Text>
+                </View>
+                <View style={{ position: 'absolute', right: 0 }}>
+                  <Text>最終更新2021/01/14</Text>
+                </View>
+              </View>
+            </Card>
             </View>
             <ScrollView contentContainerStyle={styles.scrollContentContainer}>
               {
