@@ -169,6 +169,11 @@ const sites = [
     name: '洒落怖.com',
     url: 'https://xn--f8tx20an6r.com'
   },
+  {
+    ID: 34,
+    name: 'TechCrunch',
+    url: 'https://jp.techcrunch.com'
+  },
 ]
 
 export default sites;
