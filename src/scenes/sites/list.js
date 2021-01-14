@@ -179,6 +179,11 @@ const sites = [
     name: 'トキノドロップ',
     url: 'https://tokinodrop.tokyo'
   },
+  /*{
+    ID: 36,
+    name: 'アノニマス ポスト',
+    url: 'https://anonymous-post.mobi'
+  },*/
 ]
 
 export default sites;
