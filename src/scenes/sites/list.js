@@ -1,7 +1,7 @@
 const sites = [
   {
     ID: 1,
-    name: '菊の門ニュース',
+    name: '菊ノ紋ニュース',
     url: 'https://kikunomon.news'
   },
   {
@@ -158,6 +158,11 @@ const sites = [
     ID: 31,
     name: '遠藤健太郎オフィシャルブログ',
     url: 'http://endokentaro.shinhoshu.com'
+  },
+  {
+    ID: 32,
+    name: '【厳選】洒落怖まとめ',
+    url: 'https://horror2ch.com'
   },
 ]
 
