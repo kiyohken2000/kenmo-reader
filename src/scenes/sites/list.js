@@ -164,6 +164,11 @@ const sites = [
     name: '【厳選】洒落怖まとめ',
     url: 'https://horror2ch.com'
   },
+  {
+    ID: 33,
+    name: '洒落怖.com',
+    url: 'https://xn--f8tx20an6r.com'
+  },
 ]
 
 export default sites;
