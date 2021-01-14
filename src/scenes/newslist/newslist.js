@@ -72,7 +72,7 @@ export default class NewsList extends React.Component {
 									onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title })}
 								>
 									{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
-									<View>
+									<View style={styles.list}>
 										<Text style={styles.title}>{item.title}</Text>
 										<Text style={styles.date}>{item.date}</Text>
 									</View>
@@ -95,6 +95,9 @@ const styles = StyleSheet.create({
 	title: {
     fontSize: 14,
 	},
+	list: {
+		flex: 1
+	},	
 	date: {
     fontSize: 11,
     textAlign: 'right',
