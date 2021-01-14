@@ -174,6 +174,11 @@ const sites = [
     name: 'TechCrunch',
     url: 'https://jp.techcrunch.com'
   },
+  {
+    ID: 35,
+    name: 'トキノドロップ',
+    url: 'https://tokinodrop.tokyo'
+  },
 ]
 
 export default sites;
