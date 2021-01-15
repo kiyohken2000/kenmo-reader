@@ -118,14 +118,14 @@ export default class Sites extends React.Component {
                   <Card key={i}>
                     <View style={{ flexDirection: 'row'}}>
                       <Text style={styles.name}>{u.name}</Text>
-                          <View style={{ position: 'absolute', right: 60 }}>
+                          <View style={{ position: 'absolute', right: 60, alignSelf:'center' }}>
                             <TouchableOpacity
                               onPress={ ()=>{ Linking.openURL(u.url)}}
                             >
                               <Icon name="external-link" size={40} color="black"/>
                             </TouchableOpacity>
                           </View>
-                          <View style={{ position: 'absolute', right: 0 }}>
+                          <View style={{ position: 'absolute', right: 0, alignSelf:'center' }}>
                             <TouchableOpacity
                               onPress={() => {
                                 var siteData = {

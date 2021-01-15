@@ -184,6 +184,71 @@ const sites = [
     name: 'アノニマス ポスト',
     url: 'https://anonymous-post.mobi'
   },*/
+  {
+    ID: 36,
+    name: 'Tech速：てくそく',
+    url: 'https://techsoku.com'
+  },
+  {
+    ID: 37,
+    name: 'パソコンまとめ速報',
+    url: 'https://cyclohexyl.org'
+  },
+  {
+    ID: 38,
+    name: 'ARTJUKU',
+    url: 'https://artjuku.com'
+  },
+  {
+    ID: 39,
+    name: 'イヤホン速報',
+    url: 'https://earsoku.com'
+  },
+  {
+    ID: 40,
+    name: '映画.net',
+    url: 'https://www.movient.net'
+  },
+  {
+    ID: 41,
+    name: '超マンガ速報',
+    url: 'https://chomanga.org'
+  },
+  {
+    ID: 42,
+    name: 'マンガちゃんねる',
+    url: 'https://manga-ch.com'
+  },
+  {
+    ID: 43,
+    name: 'ジャンプまとめ速報',
+    url: 'https://jumpmatome2ch.biz'
+  },
+  {
+    ID: 44,
+    name: 'コミック速報',
+    url: 'https://comisoku.com'
+  },
+  /*{
+    ID: 45,
+    name: 'あにまんch',
+    url: 'https://animanch.com'
+  },*/
+  {
+    ID: 46,
+    name: 'かみすくアニメ',
+    url: 'https://www.kamisuku.jp'
+  },
+  {
+    ID: 47,
+    name: 'SWITCH速報',
+    url: 'https://switchsoku.com'
+  },
+  {
+    ID: 48,
+    name: 'アクションゲーム速報',
+    url: 'https://actgameslog.net'
+  },
 ]
 
 export default sites;
