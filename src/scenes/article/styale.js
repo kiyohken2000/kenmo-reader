@@ -17,6 +17,9 @@ export const classesStyles = {
     borderColor: "lightblue",
     overflow: "hidden",
     margin: 5,
+  },
+  'size-full': {
+    alignSelf: "flex-start",
   }
 };
 
@@ -43,7 +46,10 @@ export const middleTagsStyles = {
     fontSize: 14,
     margin: margin,
     padding : padding
-	},
+  },
+  a: {
+    fontSize: 14
+  },
 };
 
 export const largeTagsStyles = {
@@ -66,5 +72,8 @@ export const largeTagsStyles = {
     fontSize: 20,
     margin: margin,
     padding : padding
-	},
+  },
+  a: {
+    fontSize: 20
+  }
 };
