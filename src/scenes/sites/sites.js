@@ -4,8 +4,7 @@ import { Card, ListItem, Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Feather'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
-
-import sites from './list'
+import { sites, lastUpdate} from './list'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -106,7 +105,7 @@ export default class Sites extends React.Component {
                   <Text>利用可能なサイトの一覧です</Text>
                 </View>
                 <View style={{ position: 'absolute', right: 0 }}>
-                  <Text>最終更新2021/01/14</Text>
+                  <Text>{lastUpdate}</Text>
                 </View>
               </View>
             </Card>

@@ -1,4 +1,4 @@
-const sites = [
+export const sites = [
   {
     ID: 1,
     name: '菊ノ紋ニュース',
@@ -249,6 +249,51 @@ const sites = [
     name: 'アクションゲーム速報',
     url: 'https://actgameslog.net'
   },
+  {
+    ID: 49,
+    name: 'マクリン',
+    url: 'https://makuring.com'
+  },
+  /*{
+    ID: 50,
+    name: 'CAMPFIRE',
+    url: 'https://bamp.media'
+  },*/
+  {
+    ID: 51,
+    name: 'ROOMIE',
+    url: 'https://www.roomie.jp'
+  },
+  {
+    ID: 52,
+    name: 'ガジェット通信',
+    url: 'https://getnews.jp'
+  },
+  {
+    ID: 53,
+    name: '女性自身',
+    url: 'https://jisin.jp'
+  },
+  {
+    ID: 54,
+    name: '共同通信',
+    url: 'https://www.kyodo.co.jp'
+  },
+  {
+    ID: 55,
+    name: '流通ニュース',
+    url: 'https://www.ryutsuu.biz'
+  },
+  {
+    ID: 56,
+    name: 'LNEWS',
+    url: 'https://www.lnews.jp'
+  },
+  {
+    ID: 57,
+    name: '出島ニュース',
+    url: 'https://www.digima-news.com'
+  },
 ]
 
-export default sites;
+export const lastUpdate = '2021-01-16AM'
