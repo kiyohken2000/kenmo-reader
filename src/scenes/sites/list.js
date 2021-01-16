@@ -1,4 +1,16 @@
+export const lastUpdate = '2021-01-16AM'
+
 export const sites = [
+  {
+    ID: 59,
+    name: 'イイ・アクセス',
+    url: 'https://iiaccess.net/'
+  },
+  {
+    ID: 58,
+    name: 'かーずSP',
+    url: 'http://www.karzusp.net'
+  },
   {
     ID: 1,
     name: '菊ノ紋ニュース',
@@ -296,4 +308,3 @@ export const sites = [
   },
 ]
 
-export const lastUpdate = '2021-01-16AM'

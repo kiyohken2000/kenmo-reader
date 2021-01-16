@@ -2,7 +2,18 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
 import HTML from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
-import { classesStyles, middleTagsStyles, largeTagsStyles } from './styale';
+import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './styale';
+import iframe from '@native-html/iframe-plugin';
+import WebView from 'react-native-webview';
+import Storage from 'react-native-storage';
+import AsyncStorage from '@react-native-community/async-storage';
+
+const storage = new Storage({
+  storageBackend: AsyncStorage,
+  defaultExpires: null,
+  enableCache: false,
+});
+global.storage = storage;
 
 export default class Article extends React.Component {
 
@@ -15,13 +26,35 @@ export default class Article extends React.Component {
 	
 	toggleFont = () => {
 		this.setState({ largeFont: !this.state.largeFont });
-}
+		global.storage.save({
+			key: 'font',
+			id: 'font',
+			data: this.state.largeFont,
+		});
+	}
+
+	componentDidMount() {
+		// todo lord fontsize
+		}
 
 	render() {
+		const htmlConfig = {
+			renderers: {
+				iframe,
+			},
+			renderersProps: {
+				iframe: {
+					scalesPageToFit: true
+				}
+			},
+			WebView
+		};
 		const defaultStyle = this.state.largeFont
+		const defaultClass = this.state.largeFont
 		const content = this.props.route.params.content
 		const url = this.props.route.params.url
 		const title = this.props.route.params.title
+		
 		return (
 			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
@@ -32,8 +65,10 @@ export default class Article extends React.Component {
 						</Text>
 						<HTML
 							source={{ html:content }}
-							classesStyles={classesStyles}
+							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
+							key={ `youtube-${content}` }
+							{...htmlConfig}
 						/>
 					</ScrollView>
 				</View>

@@ -1541,6 +1541,11 @@
     xcode "^2.1.0"
     xmldom "0.1.27"
 
+"@formidable-webview/webshell@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@formidable-webview/webshell/-/webshell-2.2.0.tgz#f7bad395c5fe0c6447c2c20af4188c2bec0aeec0"
+  integrity sha512-d27iW4asclfvxMzcqq8ABe/Iz8MIEL7bPYKqHmPSw44yz400uDIw9KFUZ74aTcMQxjc7spz4geYDvy2P00DnWA==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -2180,6 +2185,15 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@native-html/iframe-plugin@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@native-html/iframe-plugin/-/iframe-plugin-1.1.1.tgz#6187949a4f282637e8fefa2d8ccdcf3eefc83314"
+  integrity sha512-lUCHVhsASdIHEtfYOXfG+DhQ75za6iaBaLACt46C3lYtWSDVl1XlpMHCg1cpvmFkD9QRX8r5PtXv3FIHJaxmLA==
+  dependencies:
+    "@formidable-webview/webshell" "^2.2.0"
+    "@types/prop-types" "^15.7.3"
+    prop-types "^15.7.2"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"
@@ -2817,7 +2831,7 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.19.1.tgz#33509849f8e679e4add158959fdb086440e9553f"
   integrity sha512-5qOlnZscTn4xxM5MeGXAMOsIOIKIbh9e85zJWfBRVPlRMEVawzoPhINYbRGkBZCI8LxvBe7tJCdWiarA99OZfQ==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.7.3":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
@@ -13418,6 +13432,14 @@ react-native-web@~0.13.12:
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
+
+react-native-webview@^11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.0.3.tgz#7235ee46d3df30443734bd5e5ba3c28588413e83"
+  integrity sha512-or0MP5JthBGXX1/MNePdR7NC0LJXtr1F0yb0wrvEZ0iqSl1xh4yJ4s225qpkPdq3m8bDWMUpM0FGKad26rddOg==
+  dependencies:
+    escape-string-regexp "2.0.0"
+    invariant "2.2.4"
 
 "react-native@https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz":
   version "0.63.2"
