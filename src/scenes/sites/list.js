@@ -1,10 +1,15 @@
 export const lastUpdate = '2021-01-16AM'
 
 export const sites = [
+  /*{
+    ID: 60,
+    name: 'ひみつのどうくつ',
+    url: 'https://himitsu-ch.com'
+  },*/
   {
     ID: 59,
     name: 'イイ・アクセス',
-    url: 'https://iiaccess.net/'
+    url: 'https://iiaccess.net'
   },
   {
     ID: 58,
