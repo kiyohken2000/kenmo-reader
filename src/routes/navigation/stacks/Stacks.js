@@ -8,6 +8,7 @@ import Details from 'scenes/details'
 import NewsList from 'scenes/newslist'
 import Article from 'scenes/article'
 import Sites from 'scenes/sites'
+import Request from 'scenes/request'
 
 // import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
@@ -105,6 +106,13 @@ export const NewsListNavigator = () => (
       component={Article}
       options={({ navigation }) => ({
         title: 'Article',
+      })}
+    />
+    <Stack.Screen
+      name="Request"
+      component={Request}
+      options={({ navigation }) => ({
+        title: 'Request',
       })}
     />
   </Stack.Navigator>

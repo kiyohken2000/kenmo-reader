@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
-import HTML from 'react-native-render-html';
+import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './styale';
-import iframe from '@native-html/iframe-plugin';
+import {iframe, table} from '@native-html/iframe-plugin';
 import WebView from 'react-native-webview';
 import Storage from 'react-native-storage';
 import AsyncStorage from '@react-native-community/async-storage';
+import { IGNORED_TAGS } from 'react-native-render-html'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -34,10 +35,13 @@ export default class Article extends React.Component {
 	}
 
 	componentDidMount() {
-		// todo lord fontsize
+		// todo load fontsize
 		}
 
 	render() {
+		const renderers = {
+			table
+		};
 		const htmlConfig = {
 			renderers: {
 				iframe,
@@ -68,6 +72,7 @@ export default class Article extends React.Component {
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
 							key={ `youtube-${content}` }
+							ignoredTags={[ ...IGNORED_TAGS, 'head']}
 							{...htmlConfig}
 						/>
 					</ScrollView>

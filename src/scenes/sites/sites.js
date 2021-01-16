@@ -85,10 +85,19 @@ export default class Sites extends React.Component {
             }
           </ScrollView>
         </View>
-        <View style={styles.Overlay}>
-          <TouchableOpacity onPress={() => this.showModal()}>
-            <Icon name="plus-circle" size={65} color="orange"/>
-          </TouchableOpacity>
+        <View style={styles.Overlay2}>
+          <View style={{ flexDirection: 'row'}}>
+            <View style={{ position: 'absolute', right: 80, alignSelf:'center' }}>
+              <TouchableOpacity onPress={() => this.props.navigation.navigate('Request', { from: 'home' })}>
+                <Icon name="message-square" size={65} color="orange"/>
+              </TouchableOpacity>
+            </View>
+            <View style={{ position: 'absolute', right: 0, alignSelf:'center' }}>
+              <TouchableOpacity onPress={() => this.showModal()}>
+                <Icon name="plus-circle" size={65} color="orange"/>
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
 
         <Modal
@@ -174,6 +183,14 @@ const styles = StyleSheet.create({
     position: "absolute",
     opacity: 1.0,
     bottom: 25,
+    right: 30,
+    justifyContent: "center",
+  },
+  Overlay2: {
+    flex: 1,
+    position: "absolute",
+    opacity: 1.0,
+    bottom: 60,
     right: 30,
     justifyContent: "center",
   },
