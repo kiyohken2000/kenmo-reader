@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
 import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
-import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './styale';
+import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
 import {iframe, table} from '@native-html/iframe-plugin';
 import WebView from 'react-native-webview';
 import Storage from 'react-native-storage';

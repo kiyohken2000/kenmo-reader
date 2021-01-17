@@ -1,6 +1,51 @@
-export const lastUpdate = '2021-01-16AM'
+export const lastUpdate = '2021-01-17AM'
 
 export const sites = [
+  {
+    ID: 69,
+    name: '日刊サイゾー',
+    url: 'https://www.cyzo.com'
+  },
+  {
+    ID: 68,
+    name: 'cyzo woman',
+    url: 'https://www.cyzowoman.com'
+  },
+  {
+    ID: 67,
+    name: 'Fudge.jp',
+    url: 'https://fudge.jp'
+  },
+  {
+    ID: 66,
+    name: 'Oggi.jp',
+    url: 'https://oggi.jp'
+  },
+  {
+    ID: 65,
+    name: 'WWD JAPAN',
+    url: 'https://www.wwdjapan.com'
+  },
+  {
+    ID: 64,
+    name: 'グルメプレス',
+    url: 'https://gourmetpress.net'
+  },
+  {
+    ID: 63,
+    name: 'DIAMOND Chain Store',
+    url: 'https://diamond-rm.net'
+  },
+  {
+    ID: 62,
+    name: '電波新聞',
+    url: 'https://dempa-digital.com'
+  },
+  {
+    ID: 61,
+    name: 'GetNavi',
+    url: 'https://getnavi.jp'
+  },
   /*{
     ID: 60,
     name: 'ひみつのどうくつ',
