@@ -5,16 +5,8 @@ import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
 import {iframe, table} from '@native-html/iframe-plugin';
 import WebView from 'react-native-webview';
-import Storage from 'react-native-storage';
 import AsyncStorage from '@react-native-community/async-storage';
 import { IGNORED_TAGS } from 'react-native-render-html'
-
-const storage = new Storage({
-  storageBackend: AsyncStorage,
-  defaultExpires: null,
-  enableCache: false,
-});
-global.storage = storage;
 
 export default class Article extends React.Component {
 
@@ -26,17 +18,16 @@ export default class Article extends React.Component {
 	}
 	
 	toggleFont = () => {
+		AsyncStorage.setItem('fontSize',JSON.stringify(this.state.largeFont));
 		this.setState({ largeFont: !this.state.largeFont });
-		global.storage.save({
-			key: 'font',
-			id: 'font',
-			data: this.state.largeFont,
-		});
 	}
 
 	componentDidMount() {
-		// todo load fontsize
-		}
+		AsyncStorage.getItem('fontSize').then((value) => {
+			const fontsize = JSON.parse(value)
+			this.setState({largeFont: !fontsize})
+		 });
+	}
 
 	render() {
 		const renderers = {
