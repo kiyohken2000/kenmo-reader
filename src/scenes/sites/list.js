@@ -1,6 +1,36 @@
-export const lastUpdate = '2021-01-17PM'
+export const lastUpdate = '2021-01-18AM'
 
 export const sites = [
+  {
+    ID: 75,
+    name: '芸能スクープ、今旬ナビ！！',
+    url: 'http://imashun-navi.com'
+  },
+  {
+    ID: 74,
+    name: '日刊SPA！',
+    url: 'https://nikkan-spa.jp'
+  },
+  {
+    ID: 73,
+    name: 'SmartFLASH',
+    url: 'https://smart-flash.jp'
+  },
+  {
+    ID: 72,
+    name: 'アサ芸プラス',
+    url: 'https://www.asagei.com'
+  },
+  {
+    ID: 71,
+    name: '気になる芸能ニュースまとめ',
+    url: 'https://unicorntomo.com'
+  },
+  {
+    ID: 70,
+    name: '芸トピ',
+    url: 'https://geitopi.com'
+  },
   {
     ID: 69,
     name: '日刊サイゾー',
