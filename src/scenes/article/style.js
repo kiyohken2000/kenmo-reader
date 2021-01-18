@@ -37,6 +37,9 @@ export const largeClassesStyles = {
   'size-full': {
     alignSelf: "flex-start",
   },
+  'size-medium': {
+    alignSelf: "flex-start",
+  },
   'icon_camera': {
     display: "none"
   },
@@ -87,6 +90,9 @@ export const middleClassesStyles = {
   'size-full': {
     alignSelf: "flex-start",
   },
+  'size-medium': {
+    alignSelf: "flex-start",
+  },
   'icon_camera': {
     display: "none"
   },
@@ -134,6 +140,9 @@ export const middleTagsStyles = {
   strong: {
     fontSize: 14
   },
+  img: {
+    alignSelf: "flex-start",
+  },
 };
 
 export const largeTagsStyles = {
@@ -165,5 +174,8 @@ export const largeTagsStyles = {
   },
   strong: {
     fontSize: 20
+  },
+  img: {
+    alignSelf: "flex-start",
   },
 };
