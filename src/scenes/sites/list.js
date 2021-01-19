@@ -248,12 +248,6 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
-    ID: 39,
-    name: 'イヤホン速報',
-    url: 'https://earsoku.com',
-    caption: 'ガジェット'
-  },
-  {
     ID: 49,
     name: 'マクリン',
     url: 'https://makuring.com',
@@ -269,6 +263,12 @@ export const sites = [
     ID: 7,
     name: 'watch@2チャンネル',
     url: 'http://www.watch2chan.com',
+    caption: 'まとめサイト'
+  },
+  {
+    ID: 39,
+    name: 'イヤホン速報',
+    url: 'https://earsoku.com',
     caption: 'まとめサイト'
   },
   {
