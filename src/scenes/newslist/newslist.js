@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
   content: {
 		flex: 1,
-		marginBottom: 70,
+		marginBottom: 40,
 	},
 	title: {
     fontSize: 14,

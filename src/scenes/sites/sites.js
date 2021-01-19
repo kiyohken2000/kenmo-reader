@@ -33,10 +33,7 @@ export default class Sites extends React.Component {
       .then(res => {
         this.setState({data: res})
       });
-    }
-
-  _sites = () => {
-  };
+  }
 
   showModal() {
     this.setState({isVisible: true});
@@ -63,6 +60,7 @@ export default class Sites extends React.Component {
                       <View style={{ flexDirection: 'row'}}>
                         <View>
                           <Text style={styles.name}>{u.name}</Text>
+                          <Text style={styles.caption}>{u.caption}</Text>
                         </View>
                         <View style={{ position: 'absolute', right: 0 }}>
                           <TouchableOpacity
@@ -125,7 +123,10 @@ export default class Sites extends React.Component {
                  return (
                   <Card key={i}>
                     <View style={{ flexDirection: 'row'}}>
-                      <Text style={styles.name}>{u.name}</Text>
+                      <View>
+                        <Text style={styles.name}>{u.name}</Text>
+                        <Text style={styles.caption}>{u.caption}</Text>
+                      </View>
                           <View style={{ position: 'absolute', right: 60, alignSelf:'center' }}>
                             <TouchableOpacity
                               onPress={ ()=>{ Linking.openURL(u.url)}}
@@ -140,6 +141,7 @@ export default class Sites extends React.Component {
                                   siteid: u.ID,
                                   name: u.name,
                                   url: u.url,
+                                  caption: u.caption,
                                 }
                                 global.storage.save({
                                   key: 'site',
@@ -203,5 +205,8 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 18,
     fontWeight: 'bold',
-  }
+  },
+  caption: {
+    fontSize: 14,
+  },
 });
