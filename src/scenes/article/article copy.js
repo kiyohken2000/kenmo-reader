@@ -3,10 +3,15 @@ import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBa
 import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
-import {iframe, table} from '@native-html/iframe-plugin';
-import WebView from 'react-native-webview';
 import AsyncStorage from '@react-native-community/async-storage';
+import WebView from 'react-native-webview';
+
+import HTMLView from 'react-native-htmlview';
+
+/*
+import {iframe, table} from '@native-html/iframe-plugin';
 import { IGNORED_TAGS } from 'react-native-render-html'
+*/
 
 export default class Article extends React.Component {
 
@@ -30,22 +35,24 @@ export default class Article extends React.Component {
 	}
 
 	render() {
-		const htmlConfig = {
-			renderers: {
-				iframe,
-			},
-			renderersProps: {
-				iframe: {
-					scalesPageToFit: true
-				}
-			},
-			WebView
-		};
 		const defaultStyle = this.state.largeFont
 		const defaultClass = this.state.largeFont
 		const content = this.props.route.params.content
 		const url = this.props.route.params.url
 		const title = this.props.route.params.title
+		const instaScript = <script async src="//www.instagram.com/embed.js"></script>
+
+		function renderYoutube(node, index, siblings, parent, defaultRenderer) {
+			if (node.name == 'iframe') {
+				const a = node.attribs;
+				const iframeHtml = `<iframe src="${a.src}"></iframe>`;
+				return (
+					<View key={index} style={{width: Number(a.width), height: Number(a.height)}}>
+						<WebView source={{html: iframeHtml}} />
+					</View>
+				);
+			}
+		}
 		
 		return (
 			<View style={styles.container}>
@@ -55,13 +62,9 @@ export default class Article extends React.Component {
 						<Text style={styles.paragraph}>
 							{title}
 						</Text>
-						<HTML
-							source={{ html:content }}
-							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
-							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
-							key={ `youtube-${content}` }
-							ignoredTags={[ ...IGNORED_TAGS, 'head']}
-							{...htmlConfig}
+						<HTMLView
+							value={content}
+							renderNode={renderYoutube}
 						/>
 					</ScrollView>
 				</View>
@@ -112,3 +115,12 @@ const styles = StyleSheet.create({
     color: '#34495e',
   },
 });
+
+/*<HTML
+  source={{ html:content }}
+  classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
+  tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
+  key={ `youtube-${content}` }
+  ignoredTags={[ ...IGNORED_TAGS, 'head']}
+  {...htmlConfig}
+/>*/
