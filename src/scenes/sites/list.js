@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-18AM'
+export const lastUpdate = '2021-01-19AM'
 
 export const sites = [
   {
@@ -14,34 +14,10 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
-    ID: 94,
-    name: '東スポＷeb',
-    url: 'https://www.tokyo-sports.co.jp',
-    caption: 'スポーツ'
-  },
-  {
-    ID: 93,
-    name: 'MEN’S NON-NO WEB',
-    url: 'https://www.mensnonno.jp',
-    caption: 'ファッション'
-  },
-  {
-    ID: 91,
-    name: 'BRIDGE',
-    url: 'https://thebridge.jp',
-    caption: 'ビジネス'
-  },
-  {
     ID: 90,
     name: 'トレタメ',
     url: 'https://toretame.jp',
     caption: 'エンタメ'
-  },
-  {
-    ID: 89,
-    name: 'にじめん',
-    url: 'https://nijimen.net',
-    caption: 'サブカル'
   },
   {
     ID: 87,
@@ -50,94 +26,16 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
-    ID: 86,
-    name: 'アゴラ',
-    url: 'http://agora-web.jp',
-    caption: '政治経済'
-  },
-  {
-    ID: 85,
-    name: 'ネトセツ',
-    url: 'https://net-torisetsu.jp',
-    caption: 'IT'
-  },
-  {
     ID: 81,
     name: 'grape',
     url: 'https://grapee.jp',
     caption: 'エンタメ'
   },
   {
-    ID: 84,
-    name: 'ダ・ヴィンチニュース',
-    url: 'https://ddnavi.com',
-    caption: 'サブカル'
-  },
-  {
-    ID: 77,
-    name: 'オトナライフ',
-    url: 'https://otona-life.com',
-    caption: '生活'
-  },
-  {
     ID: 76,
     name: 'おたくま経済新聞',
     url: 'https://otakei.otakuma.net',
     caption: 'エンタメ'
-  },
-  {
-    ID: 73,
-    name: 'SmartFLASH',
-    url: 'https://smart-flash.jp',
-    caption: 'エンタメ'
-  },
-  {
-    ID: 71,
-    name: '気になる芸能ニュースまとめ',
-    url: 'https://unicorntomo.com',
-    caption: '芸能'
-  },
-  {
-    ID: 67,
-    name: 'Fudge.jp',
-    url: 'https://fudge.jp',
-    caption: 'ファッション'
-  },
-  {
-    ID: 66,
-    name: 'Oggi.jp',
-    url: 'https://oggi.jp',
-    caption: 'ファッション、生活'
-  },
-  {
-    ID: 64,
-    name: 'グルメプレス',
-    url: 'https://gourmetpress.net',
-    caption: 'グルメ、ビジネス'
-  },
-  {
-    ID: 62,
-    name: '電波新聞',
-    url: 'https://dempa-digital.com',
-    caption: 'ビジネス'
-  },
-  {
-    ID: 61,
-    name: 'GetNavi',
-    url: 'https://getnavi.jp',
-    caption: 'エンタメ、生活'
-  },
-  {
-    ID: 58,
-    name: 'かーずSP',
-    url: 'http://www.karzusp.net',
-    caption: 'サブカル'
-  },
-  {
-    ID: 7,
-    name: 'watch@2チャンネル',
-    url: 'http://www.watch2chan.com',
-    caption: 'まとめサイト'
   },
   {
     ID: 11,
@@ -152,6 +50,156 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
+    ID: 73,
+    name: 'SmartFLASH',
+    url: 'https://smart-flash.jp',
+    caption: 'エンタメ'
+  },
+  {
+    ID: 94,
+    name: '東スポＷeb',
+    url: 'https://www.tokyo-sports.co.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 93,
+    name: 'MEN’S NON-NO WEB',
+    url: 'https://www.mensnonno.jp',
+    caption: 'ファッション'
+  },
+  {
+    ID: 67,
+    name: 'Fudge.jp',
+    url: 'https://fudge.jp',
+    caption: 'ファッション'
+  },
+  {
+    ID: 66,
+    name: 'Oggi.jp',
+    url: 'https://oggi.jp',
+    caption: 'ファッション、生活'
+  },
+  {
+    ID: 89,
+    name: 'にじめん',
+    url: 'https://nijimen.net',
+    caption: 'サブカル'
+  },
+  {
+    ID: 58,
+    name: 'かーずSP',
+    url: 'http://www.karzusp.net',
+    caption: 'サブカル'
+  },
+  {
+    ID: 84,
+    name: 'ダ・ヴィンチニュース',
+    url: 'https://ddnavi.com',
+    caption: 'サブカル'
+  },
+  {
+    ID: 46,
+    name: 'かみすくアニメ',
+    url: 'https://www.kamisuku.jp',
+    caption: 'サブカル'
+  },
+  {
+    ID: 52,
+    name: 'ガジェット通信',
+    url: 'https://getnews.jp',
+    caption: 'サブカル'
+  },
+  {
+    ID: 53,
+    name: '女性自身',
+    url: 'https://jisin.jp',
+    caption: 'ニュース'
+  },
+  {
+    ID: 86,
+    name: 'アゴラ',
+    url: 'http://agora-web.jp',
+    caption: '政治経済'
+  },
+  {
+    ID: 85,
+    name: 'ネトセツ',
+    url: 'https://net-torisetsu.jp',
+    caption: 'IT'
+  },
+  {
+    ID: 34,
+    name: 'TechCrunch',
+    url: 'https://jp.techcrunch.com',
+    caption: 'IT'
+  },
+  {
+    ID: 38,
+    name: 'ARTJUKU',
+    url: 'https://artjuku.com',
+    caption: 'PC'
+  },
+  {
+    ID: 77,
+    name: 'オトナライフ',
+    url: 'https://otona-life.com',
+    caption: '生活'
+  },
+  {
+    ID: 71,
+    name: '気になる芸能ニュースまとめ',
+    url: 'https://unicorntomo.com',
+    caption: '芸能'
+  },
+  {
+    ID: 64,
+    name: 'グルメプレス',
+    url: 'https://gourmetpress.net',
+    caption: 'グルメ、ビジネス'
+  },
+  {
+    ID: 62,
+    name: '電波新聞',
+    url: 'https://dempa-digital.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 91,
+    name: 'BRIDGE',
+    url: 'https://thebridge.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 55,
+    name: '流通ニュース',
+    url: 'https://www.ryutsuu.biz',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 56,
+    name: 'LNEWS',
+    url: 'https://www.lnews.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 17,
+    name: '４０代からの挑戦！',
+    url: 'https://40chousennsya.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 61,
+    name: 'GetNavi',
+    url: 'https://getnavi.jp',
+    caption: 'エンタメ、生活'
+  },
+  {
+    ID: 35,
+    name: 'トキノドロップ',
+    url: 'https://tokinodrop.tokyo',
+    caption: '生活'
+  },
+  {
     ID: 15,
     name: 'FatherLog',
     url: 'https://fatherlog.com',
@@ -162,12 +210,6 @@ export const sites = [
     name: 'misclog（ミスクログ）',
     url: 'https://misc-log.com',
     caption: 'ガジェット'
-  },
-  {
-    ID: 17,
-    name: '４０代からの挑戦！',
-    url: 'https://40chousennsya.com',
-    caption: 'ビジネス'
   },
   {
     ID: 18,
@@ -206,40 +248,28 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
-    ID: 34,
-    name: 'TechCrunch',
-    url: 'https://jp.techcrunch.com',
-    caption: 'IT'
-  },
-  {
-    ID: 35,
-    name: 'トキノドロップ',
-    url: 'https://tokinodrop.tokyo',
-    caption: '生活'
-  },
-  {
-    ID: 36,
-    name: 'Tech速：てくそく',
-    url: 'https://techsoku.com',
-    caption: 'まとめサイト'
-  },
-  {
-    ID: 37,
-    name: 'パソコンまとめ速報',
-    url: 'https://cyclohexyl.org',
-    caption: 'まとめサイト'
-  },
-  {
-    ID: 38,
-    name: 'ARTJUKU',
-    url: 'https://artjuku.com',
-    caption: 'PC'
-  },
-  {
     ID: 39,
     name: 'イヤホン速報',
     url: 'https://earsoku.com',
     caption: 'ガジェット'
+  },
+  {
+    ID: 49,
+    name: 'マクリン',
+    url: 'https://makuring.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 51,
+    name: 'ROOMIE',
+    url: 'https://www.roomie.jp',
+    caption: '生活、ガジェット'
+  },
+  {
+    ID: 7,
+    name: 'watch@2チャンネル',
+    url: 'http://www.watch2chan.com',
+    caption: 'まとめサイト'
   },
   {
     ID: 40,
@@ -266,10 +296,16 @@ export const sites = [
     caption: 'まとめサイト'
   },
   {
-    ID: 46,
-    name: 'かみすくアニメ',
-    url: 'https://www.kamisuku.jp',
-    caption: 'サブカル'
+    ID: 36,
+    name: 'Tech速：てくそく',
+    url: 'https://techsoku.com',
+    caption: 'まとめサイト'
+  },
+  {
+    ID: 37,
+    name: 'パソコンまとめ速報',
+    url: 'https://cyclohexyl.org',
+    caption: 'まとめサイト'
   },
   {
     ID: 47,
@@ -283,42 +319,7 @@ export const sites = [
     url: 'https://actgameslog.net',
     caption: 'まとめサイト'
   },
-  {
-    ID: 49,
-    name: 'マクリン',
-    url: 'https://makuring.com',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 51,
-    name: 'ROOMIE',
-    url: 'https://www.roomie.jp',
-    caption: '生活、ガジェット'
-  },
-  {
-    ID: 52,
-    name: 'ガジェット通信',
-    url: 'https://getnews.jp',
-    caption: 'サブカル'
-  },
-  {
-    ID: 53,
-    name: '女性自身',
-    url: 'https://jisin.jp',
-    caption: 'ニュース'
-  },
-  {
-    ID: 55,
-    name: '流通ニュース',
-    url: 'https://www.ryutsuu.biz',
-    caption: 'ビジネス'
-  },
-  {
-    ID: 56,
-    name: 'LNEWS',
-    url: 'https://www.lnews.jp',
-    caption: 'ビジネス'
-  },
+  /* 表示難あり */
   {
     ID: 97,
     name: 'usedoor',
