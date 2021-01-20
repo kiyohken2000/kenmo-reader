@@ -4,7 +4,7 @@ import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
 import {iframe, table} from '@native-html/iframe-plugin';
-import WebView from 'react-native-webview';
+import { WebView } from 'react-native-webview';
 import AsyncStorage from '@react-native-community/async-storage';
 import { IGNORED_TAGS } from 'react-native-render-html'
 
@@ -30,23 +30,18 @@ export default class Article extends React.Component {
 	}
 
 	render() {
-		const htmlConfig = {
-			renderers: {
-				iframe,
-			},
-			renderersProps: {
-				iframe: {
-					scalesPageToFit: true
-				}
-			},
-			WebView
-		};
 		const defaultStyle = this.state.largeFont
 		const defaultClass = this.state.largeFont
 		const content = this.props.route.params.content
 		const url = this.props.route.params.url
 		const title = this.props.route.params.title
-		
+
+		function youtube_parser(url) {
+			var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+			var match = url.match(regExp);
+			return match && match[7].length == 11 ? match[7] : false;
+		}
+
 		return (
 			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
@@ -59,9 +54,27 @@ export default class Article extends React.Component {
 							source={{ html:content }}
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
-							key={ `youtube-${content}` }
-							ignoredTags={[ ...IGNORED_TAGS, 'head']}
-							{...htmlConfig}
+							renderers={{
+								iframe: (htmlAttribs, passProps) => {
+									const video_id = youtube_parser(htmlAttribs.src);
+									return (
+										<View
+											key={passProps.key}
+											style={{
+												width: "100%",
+												aspectRatio: 16.0 / 9.0,
+												marginTop: 16,
+												marginBottom: 16,
+											}}>
+											<WebView
+												scrollEnabled={false}
+												source={{ uri: htmlAttribs.src }}
+												style={{ flex: 1, width: "100%", aspectRatio: 16.0 / 9.0 }}
+											/>
+										</View>
+									);
+								},
+							}}
 						/>
 					</ScrollView>
 				</View>
