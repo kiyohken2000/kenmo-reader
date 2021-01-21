@@ -9,6 +9,7 @@ import NewsList from 'scenes/newslist'
 import Article from 'scenes/article'
 import Sites from 'scenes/sites'
 import Request from 'scenes/request'
+import All from 'scenes/all'
 
 // import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
@@ -113,6 +114,29 @@ export const NewsListNavigator = () => (
       component={Request}
       options={({ navigation }) => ({
         title: 'Request',
+      })}
+    />
+  </Stack.Navigator>
+)
+
+export const AllNewsNavigator = () => (
+  <Stack.Navigator
+    initialRouteName="All"
+    headerMode="screen"
+    screenOptions={navigationProps}
+  >
+    <Stack.Screen
+      name="All"
+      component={All}
+      options={({ navigation }) => ({
+        title: 'All Article',
+      })}
+    />
+    <Stack.Screen
+      name="Article"
+      component={Article}
+      options={({ navigation }) => ({
+        title: 'Article',
       })}
     />
   </Stack.Navigator>
