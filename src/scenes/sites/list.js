@@ -56,6 +56,12 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
+    ID: 111,
+    name: '女子SPA！',
+    url: 'https://joshi-spa.jp',
+    caption: 'エンタメ'
+  },
+  {
     ID: 94,
     name: '東スポＷeb',
     url: 'https://www.tokyo-sports.co.jp',
@@ -110,6 +116,12 @@ export const sites = [
     caption: 'サブカル'
   },
   {
+    ID: 113,
+    name: 'リスアニ！',
+    url: 'https://www.lisani.jp',
+    caption: 'サブカル'
+  },
+  {
     ID: 53,
     name: '女性自身',
     url: 'https://jisin.jp',
@@ -158,6 +170,36 @@ export const sites = [
     caption: 'グルメ、ビジネス'
   },
   {
+    ID: 110,
+    name: 'SAKETIMES',
+    url: 'https://jp.sake-times.com',
+    caption: 'グルメ'
+  },
+  {
+    ID: 109,
+    name: 'nomooo',
+    url: 'https://www.nomooo.jp',
+    caption: 'グルメ'
+  },
+  {
+    ID: 107,
+    name: '関西スイーツ',
+    url: 'https://www.kansaisweets.com',
+    caption: 'グルメ'
+  },
+  {
+    ID: 106,
+    name: '甘党スタイル',
+    url: 'https://amatou-style.com',
+    caption: 'グルメ'
+  },
+  {
+    ID: 105,
+    name: 'SWEETEES',
+    url: 'https://sweetees.info',
+    caption: 'グルメ'
+  },
+  {
     ID: 62,
     name: '電波新聞',
     url: 'https://dempa-digital.com',
@@ -180,6 +222,30 @@ export const sites = [
     name: 'LNEWS',
     url: 'https://www.lnews.jp',
     caption: 'ビジネス'
+  },
+  {
+    ID: 104,
+    name: 'bizSPA！フレッシュ',
+    url: 'https://bizspa.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 100,
+    name: 'GLOBIS',
+    url: 'https://globis.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 99,
+    name: 'AMP',
+    url: 'https://ampmedia.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 98,
+    name: 'ミャンマージャポン',
+    url: 'https://myanmarjapon.com/',
+    caption: 'ミャンマーの政治経済'
   },
   {
     ID: 17,
@@ -569,6 +635,36 @@ export const sites = [
     ID: 50,
     name: 'CAMPFIRE',
     url: 'https://bamp.media'
+  },*/
+  /*{
+    ID: 108,
+    name: 'FOOD PORT.',
+    url: 'https://foodport.jp',
+    caption: 'グルメ'
+  },*/
+  /*{
+    ID: 103,
+    name: 'News Socra',
+    url: 'https://socra.net',
+    caption: 'ビジネス'
+  },*/
+  /*{
+    ID: 102,
+    name: 'オルタナ',
+    url: 'https://www.alterna.co.jp',
+    caption: 'ビジネス'
+  },*/
+  /*{
+    ID: 101,
+    name: 'HARBOR BUSINESS Online',
+    url: 'https://hbol.jp',
+    caption: 'ビジネス'
+  },*/
+  /*{
+    ID: 112,
+    name: 'Real Sound',
+    url: 'https://realsound.jp',
+    caption: 'エンタメ'
   },*/
   {
     ID: 54,
