@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Feather'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
 import { sites, lastUpdate} from './list'
+import * as Haptics from 'expo-haptics';
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -149,6 +150,7 @@ export default class Sites extends React.Component {
                                   data: siteData,
                                 });
                                 this.loadStrage()
+                                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
                               }}
                             >
                               <Icon name="plus-circle" size={40} color="orange"/>

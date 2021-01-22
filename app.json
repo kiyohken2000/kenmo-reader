@@ -42,7 +42,9 @@
     "android": {
       "package": "net.votepurchase.kenmoreader",
       "versionCode": 3,
-      "permissions": []
+      "permissions": [
+        "VIBRATE"
+      ]
     },
     "description": ""
   }
