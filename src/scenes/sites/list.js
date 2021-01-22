@@ -242,6 +242,12 @@ export const sites = [
     caption: 'ビジネス'
   },
   {
+    ID: 114,
+    name: 'バズ部',
+    url: 'https://bazubu.com',
+    caption: 'ビジネス'
+  },
+  {
     ID: 98,
     name: 'ミャンマージャポン',
     url: 'https://myanmarjapon.com/',
@@ -664,6 +670,12 @@ export const sites = [
     ID: 112,
     name: 'Real Sound',
     url: 'https://realsound.jp',
+    caption: 'エンタメ'
+  },*/
+  /*{
+    ID: 115,
+    name: 'オモコロ',
+    url: 'https://omocoro.jp',
     caption: 'エンタメ'
   },*/
   {
