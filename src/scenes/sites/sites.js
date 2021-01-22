@@ -71,6 +71,7 @@ export default class Sites extends React.Component {
                                 id: u.siteid,
                               });
                               this.loadStrage()
+                              Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium) 
                             }}
                           >
                             <Icon name="x" size={20} color="green"/>
