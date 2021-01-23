@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-23AM'
+export const lastUpdate = '2021-01-24AM'
 
 export const sites = [
   {
@@ -125,6 +125,12 @@ export const sites = [
     ID: 113,
     name: 'リスアニ！',
     url: 'https://www.lisani.jp',
+    caption: 'サブカル'
+  },
+  {
+    ID: 59,
+    name: 'イイ・アクセス',
+    url: 'https://iiaccess.net',
     caption: 'サブカル'
   },
   {
@@ -440,6 +446,12 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
+    ID: 25,
+    name: 'iPhoneまとめブログ',
+    url: 'https://mobile-shuri.jp/matome',
+    caption: 'ガジェット'
+  },
+  {
     ID: 51,
     name: 'ROOMIE',
     url: 'https://www.roomie.jp',
@@ -612,12 +624,6 @@ export const sites = [
     url: 'https://himitsu-ch.com'
   },*/
   {
-    ID: 59,
-    name: 'イイ・アクセス',
-    url: 'https://iiaccess.net',
-    caption: 'サブカル'
-  },
-  {
     ID: 1,
     name: '菊ノ紋ニュース',
     url: 'https://kikunomon.news',
@@ -685,12 +691,6 @@ export const sites = [
     ID: 24,
     name: 'IPHONEな日々',
     url: 'https://iphonenahibi.com',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 25,
-    name: 'iPhoneまとめブログ',
-    url: 'https://mobile-shuri.jp/matome',
     caption: 'ガジェット'
   },
   {
