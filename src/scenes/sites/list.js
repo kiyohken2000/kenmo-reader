@@ -80,6 +80,12 @@ export const sites = [
     caption: 'ファッション'
   },
   {
+    ID: 119,
+    name: 'itSnap',
+    url: 'https://magazine.itsnap.jp',
+    caption: 'ファッション'
+  },
+  {
     ID: 66,
     name: 'Oggi.jp',
     url: 'https://oggi.jp',
@@ -155,6 +161,54 @@ export const sites = [
     ID: 77,
     name: 'オトナライフ',
     url: 'https://otona-life.com',
+    caption: '生活'
+  },
+  {
+    ID: 125,
+    name: 'Pouch',
+    url: 'https://youpouch.com',
+    caption: '生活'
+  },
+  {
+    ID: 124,
+    name: 'Googirl',
+    url: 'https://googirl.jp',
+    caption: '生活'
+  },
+  {
+    ID: 123,
+    name: '恋愛jp',
+    url: 'https://www.ren-ai.jp',
+    caption: '生活'
+  },
+  {
+    ID: 122,
+    name: 'シティリビング',
+    url: 'https://city.living.jp',
+    caption: '生活'
+  },
+  {
+    ID: 121,
+    name: 'MENJOY',
+    url: 'https://men-joy.jp',
+    caption: '生活'
+  },
+  {
+    ID: 120,
+    name: 'GINGER',
+    url: 'https://gingerweb.jp',
+    caption: '生活'
+  },
+  {
+    ID: 118,
+    name: 'folk',
+    url: 'https://folk-media.com',
+    caption: '生活'
+  },
+  {
+    ID: 116,
+    name: 'haconiwa',
+    url: 'https://www.haconiwa-mag.com',
     caption: '生活'
   },
   {
@@ -245,6 +299,66 @@ export const sites = [
     ID: 114,
     name: 'バズ部',
     url: 'https://bazubu.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 135,
+    name: '96ut.kabu',
+    url: 'https://kabu.96ut.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 134,
+    name: 'マネーの達人',
+    url: 'https://manetatsu.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 133,
+    name: '東証マネ部！',
+    url: 'https://money-bu-jpx.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 132,
+    name: 'Money Motto！',
+    url: 'https://news.hoken-mammoth.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 131,
+    name: 'Money LifeHack',
+    url: 'https://money-lifehack.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 130,
+    name: 'お金のカタチ',
+    url: 'https://venture-finance.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 129,
+    name: 'The Finance',
+    url: 'https://thefinance.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 128,
+    name: 'XD クロスディー',
+    url: 'https://exp-d.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 127,
+    name: 'STARTUP DB',
+    url: 'https://media.startup-db.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 125,
+    name: 'Mugendai',
+    url: 'https://www.mugendai-web.jp',
     caption: 'ビジネス'
   },
   {
@@ -677,6 +791,18 @@ export const sites = [
     name: 'オモコロ',
     url: 'https://omocoro.jp',
     caption: 'エンタメ'
+  },*/
+  /*{
+    ID: 126,
+    name: 'ベンチャー通信',
+    url: 'https://v-tsushin.jp',
+    caption: 'ビジネス'
+  },*/
+  /*{
+    ID: 117,
+    name: 'kufura（クフラ）',
+    url: 'https://kufura.jp',
+    caption: '生活'
   },*/
   {
     ID: 54,
