@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text, View, ScrollView, StatusBar, StyleSheet, RefreshControl } from 'react-native'
 import { Card, List, ListItem, Thumbnail, Container, Content } from 'native-base'
-import Spinner from 'react-native-loading-spinner-overlay'
 import Button from 'components/Button'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
@@ -29,7 +28,6 @@ export default class All extends React.Component {
 		super(props);
 		this.state = { 
 			items: [] ,
-			spinner: true,
 			data: [],
 		};
 	}
@@ -48,7 +46,7 @@ getNews() {
 					.then((responseJson) => {
 						for(var i in responseJson) {
 							var p = new WPPost(responseJson[i]);
-							this.setState({ items: this.state.items.concat([p]), spinner: false });
+							this.setState({ items: this.state.items.concat([p]) });
 						}
 					})
 					.catch((error) => {
@@ -74,12 +72,6 @@ render() {
 	return (
 		<View style={styles.container}>
 			<StatusBar barStyle="light-content" />
-				<Spinner
-					visible={this.state.spinner}
-					textContent="読込中..."
-					textStyle={{ color: "#fff" }}
-					overlayColor="rgba(0,0,0,0.5)"
-				/>
 				<View style={styles.content}>
 					<List
 						refreshControl={

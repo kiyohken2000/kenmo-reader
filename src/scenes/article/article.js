@@ -111,7 +111,22 @@ export default class Article extends React.Component {
 							> 
 								<Icon name="inbox" size={30} color="black"/>
 							</TouchableOpacity>
-						</View> : null
+						</View>
+						:
+						<View style={{ position: 'absolute', right: 120 }}>
+							<TouchableOpacity
+								onPress={() => {
+									global.storage.remove({
+										key: 'archive',
+										id: title,
+									});
+									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+									this.props.navigation.goBack()
+								}}
+							> 
+								<Icon name="trash" size={30} color="black"/>
+							</TouchableOpacity>
+						</View>
 						}
 						<View style={{ position: 'absolute', right: 60 }}>
 							<TouchableOpacity onPress={() => this.toggleFont()}> 
