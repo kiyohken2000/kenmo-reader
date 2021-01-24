@@ -9,7 +9,7 @@
       "web"
     ],
     "sdkVersion": "40.0.0",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/images/logo-sm.png",
     "splash": {
@@ -27,7 +27,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "net.votepurchase.kenmoreader",
-      "buildNumber": "1.0.4"
+      "buildNumber": "1.0.5"
     },
     "packagerOpts": {
       "config": "metro.config.js",
