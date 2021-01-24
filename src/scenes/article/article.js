@@ -6,7 +6,16 @@ import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsSty
 import {iframe, table} from '@native-html/iframe-plugin';
 import { WebView } from 'react-native-webview';
 import AsyncStorage from '@react-native-community/async-storage';
+import Storage from 'react-native-storage'
 import { IGNORED_TAGS } from 'react-native-render-html'
+import * as Haptics from 'expo-haptics';
+
+const storage = new Storage({
+  storageBackend: AsyncStorage,
+  defaultExpires: null,
+  enableCache: false,
+});
+global.storage = storage;
 
 export default class Article extends React.Component {
 
@@ -35,6 +44,8 @@ export default class Article extends React.Component {
 		const content = this.props.route.params.content
 		const url = this.props.route.params.url
 		const title = this.props.route.params.title
+		const arrival = this.props.route.params.from
+		const date = this.props.route.params.date
 
 		function youtube_parser(url) {
 			var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
@@ -80,6 +91,28 @@ export default class Article extends React.Component {
 				</View>
 				<View style={styles.Overlay}>
 					<View style={{ flexDirection: 'row'}}>
+						{arrival ?
+						<View style={{ position: 'absolute', right: 120 }}>
+							<TouchableOpacity
+								onPress={() => {
+									var archiveData = {
+										title: title,
+										url: url,
+										date: date,
+										content: content
+									}
+									global.storage.save({
+										key: 'archive',
+										id: title,
+										data: archiveData,
+									});
+									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+								}}
+							> 
+								<Icon name="inbox" size={30} color="black"/>
+							</TouchableOpacity>
+						</View> : null
+						}
 						<View style={{ position: 'absolute', right: 60 }}>
 							<TouchableOpacity onPress={() => this.toggleFont()}> 
 								<Icon name="type" size={30} color="black"/>
@@ -113,7 +146,7 @@ const styles = StyleSheet.create({
     flex: 1,
     position: "absolute",
     opacity: 1.0,
-    bottom: 80,
+    bottom: 60,
     right: 35,
     justifyContent: "center",
 	},

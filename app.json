@@ -9,7 +9,7 @@
       "web"
     ],
     "sdkVersion": "40.0.0",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/logo-sm.png",
     "splash": {
@@ -27,7 +27,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "net.votepurchase.kenmoreader",
-      "buildNumber": "1.0.3"
+      "buildNumber": "1.0.4"
     },
     "packagerOpts": {
       "config": "metro.config.js",
@@ -41,7 +41,7 @@
     },
     "android": {
       "package": "net.votepurchase.kenmoreader",
-      "versionCode": 4,
+      "versionCode": 5,
       "permissions": [
         "VIBRATE"
       ]

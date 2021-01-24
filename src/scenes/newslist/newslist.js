@@ -69,7 +69,7 @@ export default class NewsList extends React.Component {
 							renderRow={
 								(item) =>
 								<ListItem
-									onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title })}
+									onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
 								>
 									{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
 									<View style={styles.list}>

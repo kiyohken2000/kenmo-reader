@@ -10,6 +10,7 @@ import Article from 'scenes/article'
 import Sites from 'scenes/sites'
 import Request from 'scenes/request'
 import All from 'scenes/all'
+import Archive from 'scenes/archive'
 
 // import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
@@ -130,6 +131,29 @@ export const AllNewsNavigator = () => (
       component={All}
       options={({ navigation }) => ({
         title: 'All Article',
+      })}
+    />
+    <Stack.Screen
+      name="Article"
+      component={Article}
+      options={({ navigation }) => ({
+        title: 'Article',
+      })}
+    />
+  </Stack.Navigator>
+)
+
+export const ArchiveNavigator = () => (
+  <Stack.Navigator
+    initialRouteName="Archive"
+    headerMode="screen"
+    screenOptions={navigationProps}
+  >
+    <Stack.Screen
+      name="Archive"
+      component={Archive}
+      options={({ navigation }) => ({
+        title: 'Archive',
       })}
     />
     <Stack.Screen

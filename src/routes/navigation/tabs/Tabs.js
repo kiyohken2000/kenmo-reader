@@ -5,7 +5,7 @@ import FontIcon from 'react-native-vector-icons/FontAwesome5'
 import { colors } from 'theme'
 
 // stack navigators
-import { HomeNavigator, ProfileNavigator, NewsListNavigator, AllNewsNavigator } from '../stacks'
+import { HomeNavigator, ProfileNavigator, NewsListNavigator, AllNewsNavigator, ArchiveNavigator } from '../stacks'
 
 const Tab = createBottomTabNavigator()
 
@@ -33,6 +33,15 @@ const TabNavigator = () => (
                 solid
               />
             )
+            case 'Archive':
+            return (
+              <FontIcon
+                name="inbox"
+                color={focused ? colors.lightPurple : colors.gray}
+                size={20}
+                solid
+              />
+            )
           default:
             return <View />
         }
@@ -54,6 +63,7 @@ const TabNavigator = () => (
   >
     <Tab.Screen name="Sites" component={NewsListNavigator} />
     <Tab.Screen name="All" component={AllNewsNavigator} />
+    <Tab.Screen name="Archive" component={ArchiveNavigator} />
   </Tab.Navigator>
 )
 
