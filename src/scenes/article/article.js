@@ -65,6 +65,8 @@ export default class Article extends React.Component {
 							source={{ html:content }}
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
+							baseFontStyle={{ fontFamily: "Roboto" }}
+							ignoredStyles={["font-family", "letter-spacing"]}
 							renderers={{
 								iframe: (htmlAttribs, passProps) => {
 									const video_id = youtube_parser(htmlAttribs.src);
@@ -92,53 +94,71 @@ export default class Article extends React.Component {
 				<View style={styles.Overlay}>
 					<View style={{ flexDirection: 'row'}}>
 						{arrival ?
-						<View style={{ position: 'absolute', right: 120 }}>
-							<TouchableOpacity
-								onPress={() => {
-									var archiveData = {
-										title: title,
-										url: url,
-										date: date,
-										content: content
-									}
-									global.storage.save({
-										key: 'archive',
-										id: title,
-										data: archiveData,
-									});
-									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-								}}
-							> 
-								<Icon name="inbox" size={30} color="black"/>
-							</TouchableOpacity>
-						</View>
-						:
-						<View style={{ position: 'absolute', right: 120 }}>
-							<TouchableOpacity
-								onPress={() => {
-									global.storage.remove({
-										key: 'archive',
-										id: title,
-									});
-									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-									this.props.navigation.goBack()
-								}}
-							> 
-								<Icon name="trash" size={30} color="black"/>
-							</TouchableOpacity>
-						</View>
+							<View style={{ position: 'absolute', right: 120 }}>
+								<Icon.Button
+									name="inbox"
+									size={30}
+									color="black"
+									borderRadius='50'
+									backgroundColor='#fffff0'
+									iconStyle={{marginRight: 0}}
+									onPress={() => {
+										var archiveData = {
+											title: title,
+											url: url,
+											date: date,
+											content: content
+										}
+										global.storage.save({
+											key: 'archive',
+											id: title,
+											data: archiveData,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+									}}
+								/>
+							</View>
+							:
+							<View style={{ position: 'absolute', right: 120 }}>
+								<Icon.Button
+									name="trash"
+									size={30}
+									color="black"
+									borderRadius='50'
+									backgroundColor='#dda0dd'
+									iconStyle={{marginRight: 0}}
+									onPress={() => {
+										global.storage.remove({
+											key: 'archive',
+											id: title,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+										this.props.navigation.goBack()
+									}}
+								/>
+							</View>
 						}
 						<View style={{ position: 'absolute', right: 60 }}>
-							<TouchableOpacity onPress={() => this.toggleFont()}> 
-								<Icon name="type" size={30} color="black"/>
-							</TouchableOpacity>
+							<Icon.Button
+								name="type"
+								size={30}
+								color="black"
+								borderRadius='50'
+								backgroundColor='#b0c4de'
+								iconStyle={{marginRight: 0}}
+								onPress={() => this.toggleFont()}
+							/>
 						</View>
 						<View style={{ position: 'absolute', right: 0 }}>
-							<TouchableOpacity 
+							<Icon.Button
+								name="external-link"
+								size={30}
+								color="black"
+								borderRadius='50'
+								backgroundColor='#d3d3d3'
+								iconStyle={{marginRight: 0}}
 								onPress={ ()=>{ Linking.openURL(url)}}
-							>
-								<Icon name="external-link" size={30} color="black"/>
-							</TouchableOpacity>
+							/>
 						</View>
 					</View>
         </View>
