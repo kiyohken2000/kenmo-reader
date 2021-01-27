@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-27AM'
+export const lastUpdate = '2021-01-28AM'
 
 export const sites = [
   {
@@ -365,6 +365,12 @@ export const sites = [
     ID: 125,
     name: 'Mugendai',
     url: 'https://www.mugendai-web.jp',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 136,
+    name: 'Business Journal',
+    url: 'https://biz-journal.jp',
     caption: 'ビジネス'
   },
   {
