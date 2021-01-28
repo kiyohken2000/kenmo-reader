@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
 import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
@@ -47,12 +47,6 @@ export default class Article extends React.Component {
 		const arrival = this.props.route.params.from
 		const date = this.props.route.params.date
 
-		function youtube_parser(url) {
-			var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-			var match = url.match(regExp);
-			return match && match[7].length == 11 ? match[7] : false;
-		}
-
 		return (
 			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
@@ -69,7 +63,6 @@ export default class Article extends React.Component {
 							ignoredStyles={["font-family", "letter-spacing"]}
 							renderers={{
 								iframe: (htmlAttribs, passProps) => {
-									const video_id = youtube_parser(htmlAttribs.src);
 									return (
 										<View
 											key={passProps.key}
@@ -87,6 +80,32 @@ export default class Article extends React.Component {
 										</View>
 									);
 								},
+								blockquote: (htmlAttribs, children, passProps, renderersProps) => {
+									if (htmlAttribs.class == 'instagram-media') {
+										const instagramLink = htmlAttribs['data-instgrm-permalink']
+										return (
+											<View
+												key={passProps.key}
+												style={{
+													width: "100%",
+													aspectRatio: 16.0 / 20.0,
+												}}>
+												<WebView
+													scrollEnabled={false}
+													source={{ uri: instagramLink}}
+												/>
+											</View>
+										)
+									} else if (htmlAttribs.class == 'twitter-tweet') {
+										return (
+											<View style={styles.tweet}>{children}</View>
+										)
+									} else {
+										return (
+											<View style={styles.blockquote}>{children}</View>
+										)
+									}
+								}
 							}}
 						/>
 					</ScrollView>
@@ -173,5 +192,21 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#34495e',
-  },
+	},
+	tweet: {
+		backgroundColor: "lightblue",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "lightblue",
+    overflow: "hidden",
+    margin: 5,
+	},
+	blockquote: {
+		backgroundColor: 'lightgray',
+		padding: 10,
+    borderRadius: 20,
+    overflow: "hidden",
+    margin: 5,
+  }
 });

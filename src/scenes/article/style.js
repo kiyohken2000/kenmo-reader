@@ -1,15 +1,6 @@
 import { Dimensions, StyleSheet } from 'react-native';
 
 export const largeClassesStyles = {
-	'twitter-tweet': {
-    backgroundColor: "lightblue",
-    padding: 10,
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: "lightblue",
-    overflow: "hidden",
-    margin: 5,
-  },
   'liquid-speech-balloon-text': {
     backgroundColor: "lightblue",
     padding: 10,
@@ -55,14 +46,6 @@ export const largeClassesStyles = {
 };
 
 export const middleClassesStyles = {
-	'twitter-tweet': {
-    backgroundColor: "lightblue",
-    padding: 10,
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: "lightblue",
-    overflow: "hidden"
-  },
   'liquid-speech-balloon-text': {
     backgroundColor: "lightblue",
     padding: 10,
