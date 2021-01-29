@@ -113,41 +113,41 @@ export default class Article extends React.Component {
 				<View style={styles.Overlay}>
 					<View style={{ flexDirection: 'row'}}>
 						{arrival ?
-						<View style={{ position: 'absolute', right: 120 }}>
-							<TouchableOpacity
-								onPress={() => {
-									var archiveData = {
-										title: title,
-										url: url,
-										date: date,
-										content: content
-									}
-									global.storage.save({
-										key: 'archive',
-										id: title,
-										data: archiveData,
-									});
-									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-								}}
-							> 
-								<Icon name="inbox" size={30} color="black"/>
-							</TouchableOpacity>
-						</View>
-						:
-						<View style={{ position: 'absolute', right: 120 }}>
-							<TouchableOpacity
-								onPress={() => {
-									global.storage.remove({
-										key: 'archive',
-										id: title,
-									});
-									Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-									this.props.navigation.goBack()
-								}}
-							> 
-								<Icon name="trash" size={30} color="black"/>
-							</TouchableOpacity>
-						</View>
+							<View style={{ position: 'absolute', right: 120 }}>
+								<TouchableOpacity
+									onPress={() => {
+										var archiveData = {
+											title: title,
+											url: url,
+											date: date,
+											content: content
+										}
+										global.storage.save({
+											key: 'archive',
+											id: title,
+											data: archiveData,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+									}}
+								> 
+									<Icon name="inbox" size={30} color="black"/>
+								</TouchableOpacity>
+							</View>
+							:
+							<View style={{ position: 'absolute', right: 120 }}>
+								<TouchableOpacity
+									onPress={() => {
+										global.storage.remove({
+											key: 'archive',
+											id: title,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+										this.props.navigation.goBack()
+									}}
+								> 
+									<Icon name="trash" size={30} color="black"/>
+								</TouchableOpacity>
+							</View>
 						}
 						<View style={{ position: 'absolute', right: 60 }}>
 							<TouchableOpacity onPress={() => this.toggleFont()}> 
