@@ -132,6 +132,28 @@ export default class Article extends React.Component {
 								> 
 									<Icon name="inbox" size={30} color="black"/>
 								</TouchableOpacity>
+								{/*<Icon.Button
+									name="inbox"
+									size={30}
+									color="black"
+									backgroundColor="#dda0dd"
+									iconStyle={{marginRight: 0}}
+									borderRadius="50"
+									onPress={() => {
+										var archiveData = {
+											title: title,
+											url: url,
+											date: date,
+											content: content
+										}
+										global.storage.save({
+											key: 'archive',
+											id: title,
+											data: archiveData,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+									}}
+								/>*/}
 							</View>
 							:
 							<View style={{ position: 'absolute', right: 120 }}>
@@ -147,12 +169,37 @@ export default class Article extends React.Component {
 								> 
 									<Icon name="trash" size={30} color="black"/>
 								</TouchableOpacity>
+								{/*<Icon.Button
+									name="trash"
+									size={30}
+									color="black"
+									backgroundColor="#c0c0c0"
+									iconStyle={{marginRight: 0}}
+									borderRadius="50"
+									onPress={() => {
+										global.storage.remove({
+											key: 'archive',
+											id: title,
+										});
+										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+										this.props.navigation.goBack()
+									}}
+								/>*/}
 							</View>
 						}
 						<View style={{ position: 'absolute', right: 60 }}>
 							<TouchableOpacity onPress={() => this.toggleFont()}> 
 								<Icon name="type" size={30} color="black"/>
 							</TouchableOpacity>
+							{/*<Icon.Button
+								name="type"
+								size={30}
+								color="black"
+								backgroundColor="#b0c4de"
+								iconStyle={{marginRight: 0}}
+								borderRadius="50"
+								onPress={() => this.toggleFont()}
+							/>*/}
 						</View>
 						<View style={{ position: 'absolute', right: 0 }}>
 							<TouchableOpacity 
@@ -160,6 +207,15 @@ export default class Article extends React.Component {
 							>
 								<Icon name="external-link" size={30} color="black"/>
 							</TouchableOpacity>
+							{/*<Icon.Button
+								name="external-link"
+								size={30}
+								color="black"
+								backgroundColor="#00ced1"
+								iconStyle={{marginRight: 0}}
+								borderRadius="50"
+								onPress={ ()=>{ Linking.openURL(url)}}
+							/>*/}
 						</View>
 					</View>
         </View>
