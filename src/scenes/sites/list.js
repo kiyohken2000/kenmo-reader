@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-29AM'
+export const lastUpdate = '2021-01-30AM'
 
 export const sites = [
   {
@@ -401,6 +401,18 @@ export const sites = [
     ID: 15,
     name: 'FatherLog',
     url: 'https://fatherlog.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 138,
+    name: '酔いどれオヤジのブログwp',
+    url: 'https://minatokobe.com/wp',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 137,
+    name: 'MoguraVR',
+    url: 'https://www.moguravr.com',
     caption: 'ガジェット'
   },
   {
