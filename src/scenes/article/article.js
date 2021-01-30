@@ -98,14 +98,17 @@ export default class Article extends React.Component {
 										)
 									} else if (htmlAttribs.class == 'twitter-tweet') {
 										return (
-											<View style={styles.tweet}>{children}</View>
+											<View style={styles.tweet}>
+												<Icon name="twitter" size={30} color="black"/>
+												{children}
+											</View>
 										)
 									} else {
 										return (
 											<View style={styles.blockquote}>{children}</View>
 										)
 									}
-								}
+								},
 							}}
 						/>
 					</ScrollView>
