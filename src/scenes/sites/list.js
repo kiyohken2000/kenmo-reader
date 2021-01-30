@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-30AM'
+export const lastUpdate = '2021-01-31AM'
 
 export const sites = [
   {
@@ -156,12 +156,6 @@ export const sites = [
     name: 'TechCrunch',
     url: 'https://jp.techcrunch.com',
     caption: 'IT'
-  },
-  {
-    ID: 38,
-    name: 'ARTJUKU',
-    url: 'https://artjuku.com',
-    caption: 'PC'
   },
   {
     ID: 77,
@@ -468,6 +462,72 @@ export const sites = [
     name: 'iPhoneまとめブログ',
     url: 'https://mobile-shuri.jp/matome',
     caption: 'ガジェット'
+  },
+  {
+    ID: 38,
+    name: 'ARTJUKU',
+    url: 'https://artjuku.com',
+    caption: 'PC'
+  },
+  {
+    ID: 149,
+    name: '4 Chunks',
+    url: 'https://4chunks.com',
+    caption: 'PC'
+  },
+  {
+    ID: 148,
+    name: 'ちもろぐ',
+    url: 'https://chimolog.co',
+    caption: 'PC'
+  },
+  {
+    ID: 147,
+    name: 'PC自由帳',
+    url: 'https://pcfreebook.com',
+    caption: 'PC'
+  },
+  {
+    ID: 145,
+    name: 'ニッチなPCゲーマーの環境構築Z',
+    url: 'https://www.nichepcgamer.com',
+    caption: 'PC'
+  },
+  {
+    ID: 144,
+    name: '自作PCの道楽新館',
+    url: 'https://www.run-tomorrow.com',
+    caption: 'PC'
+  },
+  {
+    ID: 143,
+    name: 'デイリーガジェット',
+    url: 'https://daily-gadget.net',
+    caption: 'PC'
+  },
+  {
+    ID: 142,
+    name: 'ウインタブ',
+    url: 'https://win-tab.net',
+    caption: 'PC'
+  },
+  {
+    ID: 141,
+    name: '公安9課',
+    url: 'https://pssection9.com',
+    caption: 'PC'
+  },
+  {
+    ID: 140,
+    name: 'こまめブログ',
+    url: 'https://little-beans.net',
+    caption: 'PC'
+  },
+  {
+    ID: 139,
+    name: '自作ユーザーが解説するゲーミングPCガイド',
+    url: 'https://g-pc.info',
+    caption: 'PC'
   },
   {
     ID: 51,
@@ -821,6 +881,12 @@ export const sites = [
     name: 'kufura（クフラ）',
     url: 'https://kufura.jp',
     caption: '生活'
+  },*/
+  /*{
+    ID: 146,
+    name: 'がじぇっとりっぷ',
+    url: 'https://gadgetrip.jp',
+    caption: 'PC'
   },*/
   {
     ID: 54,
