@@ -59,6 +59,8 @@ export default class Article extends React.Component {
 							source={{ html:content }}
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
+							baseFontStyle={{ fontFamily: "Roboto" }}
+							ignoredStyles={["font-family", "letter-spacing"]}
 							renderers={{
 								iframe: (htmlAttribs, passProps) => {
 									return (
