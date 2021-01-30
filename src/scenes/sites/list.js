@@ -146,16 +146,16 @@ export const sites = [
     caption: '政治経済'
   },
   {
-    ID: 85,
-    name: 'ネトセツ',
-    url: 'https://net-torisetsu.jp',
-    caption: 'IT'
+    ID: 177,
+    name: '大前研一 ニュースの視点',
+    url: 'https://www.lt-empower.com/ohmae_blog',
+    caption: '政治経済'
   },
   {
-    ID: 34,
-    name: 'TechCrunch',
-    url: 'https://jp.techcrunch.com',
-    caption: 'IT'
+    ID: 176,
+    name: '経済学101',
+    url: 'https://econ101.jp',
+    caption: '政治経済'
   },
   {
     ID: 77,
@@ -392,6 +392,36 @@ export const sites = [
     caption: '生活'
   },
   {
+    ID: 85,
+    name: 'ネトセツ',
+    url: 'https://net-torisetsu.jp',
+    caption: 'IT'
+  },
+  {
+    ID: 34,
+    name: 'TechCrunch',
+    url: 'https://jp.techcrunch.com',
+    caption: 'IT'
+  },
+  {
+    ID: 183,
+    name: 'Techwave',
+    url: 'https://techwave.jp',
+    caption: 'IT'
+  },
+  {
+    ID: 182,
+    name: 'IOTNEWS',
+    url: 'https://iotnews.jp',
+    caption: 'IT'
+  },
+  {
+    ID: 180,
+    name: 'MIT Technology Review',
+    url: 'https://www.technologyreview.jp',
+    caption: 'IT'
+  },
+  {
     ID: 15,
     name: 'FatherLog',
     url: 'https://fatherlog.com',
@@ -464,6 +494,36 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
+    ID: 153,
+    name: '変デジ研究所',
+    url: 'https://lab.hendigi.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 150,
+    name: 'COLA BLOG',
+    url: 'https://www.cola507.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 181,
+    name: 'ガジェットショット',
+    url: 'https://gadget-shot.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 179,
+    name: '物欲ガジェット',
+    url: 'https://butsuyoku-gadget.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 178,
+    name: '気になる、記になる…',
+    url: 'https://taisy0.com',
+    caption: 'ガジェット'
+  },
+  {
     ID: 38,
     name: 'ARTJUKU',
     url: 'https://artjuku.com',
@@ -528,6 +588,144 @@ export const sites = [
     name: '自作ユーザーが解説するゲーミングPCガイド',
     url: 'https://g-pc.info',
     caption: 'PC'
+  },
+  {
+    ID: 175,
+    name: 'doope',
+    url: 'https://doope.jp',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 174,
+    name: 'EAA!! FPS News',
+    url: 'https://fpsjp.net',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 173,
+    name: '電ファミニコゲーマー',
+    url: 'https://news.denfaminicogamer.jp',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 172,
+    name: 'Negitaku',
+    url: 'https://www.negitaku.org',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 171,
+    name: 'ゲームのはなし',
+    url: 'https://gamestalk.net',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 170,
+    name: '大人のためのゲーム講座',
+    url: 'https://gamegaz.com',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 169,
+    name: 't011',
+    url: 'https://t011.org',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 168,
+    name: 'ゴジライン',
+    url: 'https://goziline.com',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 167,
+    name: 'PS4ちゃんねる Pro',
+    url: 'https://ps4pro.jp',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 166,
+    name: 'のゲームブログ',
+    url: 'https://nogameb.com',
+    caption: 'ゲーム'
+  },
+  {
+    ID: 164,
+    name: 'ログカメラ',
+    url: 'https://logcamera.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 163,
+    name: 'ヒーコ',
+    url: 'https://xico.media',
+    caption: 'カメラ'
+  },
+  {
+    ID: 162,
+    name: 'CAMEOTA',
+    url: 'https://cameota.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 161,
+    name: 'YOUのデジタルマニアックス',
+    url: 'https://www.dmaniax.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 160,
+    name: 'とるなら～写真道楽道中記～',
+    url: 'https://asobinet.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 159,
+    name: 'ゆるカメライフ',
+    url: 'https://yurucamelife.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 158,
+    name: 'ふぉとぷろむな～ど',
+    url: 'https://photo-promenade.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 157,
+    name: 'Amazing Graph',
+    url: 'http://a-graph.jp',
+    caption: 'カメラ'
+  },
+  {
+    ID: 156,
+    name: 'カメラと三脚とアルカスイスと ときどきMac',
+    url: 'https://arcarrsgitzo.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 155,
+    name: 'デジカメジン',
+    url: 'https://www.digicamezine.com',
+    caption: 'カメラ'
+  },
+  {
+    ID: 154,
+    name: 'CAPA CAMERA',
+    url: 'https://capa.getnavi.jp',
+    caption: 'カメラ'
+  },
+  {
+    ID: 152,
+    name: 'Photograpark',
+    url: 'https://photograpark.net',
+    caption: 'カメラ'
+  },
+  {
+    ID: 151,
+    name: 'フォトグラファン',
+    url: 'https://www.photografan.com',
+    caption: 'カメラ'
   },
   {
     ID: 51,
@@ -887,6 +1085,12 @@ export const sites = [
     name: 'がじぇっとりっぷ',
     url: 'https://gadgetrip.jp',
     caption: 'PC'
+  },*/
+  /*{
+    ID: 165,
+    name: 'studio9',
+    url: 'https://photo-studio9.com',
+    caption: 'カメラ'
   },*/
   {
     ID: 54,
