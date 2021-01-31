@@ -81,7 +81,7 @@ export default class Article extends React.Component {
 										</View>
 									);
 								},
-								blockquote: (htmlAttribs, children, passProps, renderersProps) => {
+								blockquote: (htmlAttribs, children, passProps, renderersProps, domNode) => {
 									if (htmlAttribs.class == 'instagram-media') {
 										const instagramLink = htmlAttribs['data-instgrm-permalink']
 										return (
@@ -98,10 +98,15 @@ export default class Article extends React.Component {
 											</View>
 										)
 									} else if (htmlAttribs.class == 'twitter-tweet') {
+										const JS = '<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>'
+										// const source = JSON.stringify(children)
+										// const html = domNodeToHTMLString(children)
 										return (
 											<View style={styles.tweet}>
 												<Icon name="twitter" size={30} color="black"/>
 												{children}
+												{/*<Text>{source}</Text>*/}
+												{/*<Text>aaaaaaaaaaaaa{html}1111111111111111</Text>*/}
 											</View>
 										)
 									} else {
