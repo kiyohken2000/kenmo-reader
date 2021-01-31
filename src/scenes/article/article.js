@@ -9,6 +9,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import Storage from 'react-native-storage'
 import { IGNORED_TAGS } from 'react-native-render-html'
 import * as Haptics from 'expo-haptics';
+import { Button } from 'galio-framework';
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -117,7 +118,14 @@ export default class Article extends React.Component {
 					<View style={{ flexDirection: 'row'}}>
 						{arrival ?
 							<View style={{ position: 'absolute', right: 120 }}>
-								<TouchableOpacity
+								<Button
+									onlyIcon
+									icon="inbox"
+									iconFamily="Feather"
+									iconSize={30}
+									color="#dda0dd"
+									iconColor="black"
+									style={{ width: 45, height: 45 }}
 									onPress={() => {
 										var archiveData = {
 											title: title,
@@ -132,35 +140,18 @@ export default class Article extends React.Component {
 										});
 										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
 									}}
-								> 
-									<Icon name="inbox" size={30} color="black"/>
-								</TouchableOpacity>
-								{/*<Icon.Button
-									name="inbox"
-									size={30}
-									color="black"
-									backgroundColor="#dda0dd"
-									iconStyle={{marginRight: 0}}
-									borderRadius="50"
-									onPress={() => {
-										var archiveData = {
-											title: title,
-											url: url,
-											date: date,
-											content: content
-										}
-										global.storage.save({
-											key: 'archive',
-											id: title,
-											data: archiveData,
-										});
-										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-									}}
-								/>*/}
+								/>
 							</View>
 							:
 							<View style={{ position: 'absolute', right: 120 }}>
-								<TouchableOpacity
+								<Button
+									onlyIcon
+									icon="trash"
+									iconFamily="Feather"
+									iconSize={30}
+									color="#c0c0c0"
+									iconColor="black"
+									style={{ width: 45, height: 45 }}
 									onPress={() => {
 										global.storage.remove({
 											key: 'archive',
@@ -169,56 +160,32 @@ export default class Article extends React.Component {
 										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
 										this.props.navigation.goBack()
 									}}
-								> 
-									<Icon name="trash" size={30} color="black"/>
-								</TouchableOpacity>
-								{/*<Icon.Button
-									name="trash"
-									size={30}
-									color="black"
-									backgroundColor="#c0c0c0"
-									iconStyle={{marginRight: 0}}
-									borderRadius="50"
-									onPress={() => {
-										global.storage.remove({
-											key: 'archive',
-											id: title,
-										});
-										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-										this.props.navigation.goBack()
-									}}
-								/>*/}
+								/>
 							</View>
 						}
 						<View style={{ position: 'absolute', right: 60 }}>
-							<TouchableOpacity onPress={() => this.toggleFont()}> 
-								<Icon name="type" size={30} color="black"/>
-							</TouchableOpacity>
-							{/*<Icon.Button
-								name="type"
-								size={30}
-								color="black"
-								backgroundColor="#b0c4de"
-								iconStyle={{marginRight: 0}}
-								borderRadius="50"
-								onPress={() => this.toggleFont()}
-							/>*/}
+							<Button
+									onlyIcon
+									icon="type"
+									iconFamily="Feather"
+									iconSize={30}
+									color="#b0c4de"
+									iconColor="black"
+									style={{ width: 45, height: 45 }}
+									onPress={() => this.toggleFont()}
+							/>
 						</View>
 						<View style={{ position: 'absolute', right: 0 }}>
-							<TouchableOpacity 
-								onPress={ ()=>{ Linking.openURL(url)}}
-							>
-								<Icon name="external-link" size={30} color="black"/>
-							</TouchableOpacity>
-							{/*<Icon.Button
-								name="external-link"
-								size={30}
-								color="black"
-								backgroundColor="#00ced1"
-								iconStyle={{marginRight: 0}}
-								borderRadius="50"
-								onPress={ ()=>{ Linking.openURL(url)}}
-							/>*/}
+							<Button
+									onlyIcon
+									icon="external-link"
+									iconFamily="Feather"
+									iconSize={30}
+									color="#00ced1"
+									iconColor="black"
+									style={{ width: 45, height: 45 }}
+									onPress={ ()=>{ Linking.openURL(url)}}
+							/>
 						</View>
 					</View>
         </View>
@@ -241,8 +208,8 @@ const styles = StyleSheet.create({
     flex: 1,
     position: "absolute",
     opacity: 1.0,
-    bottom: 60,
-    right: 35,
+    bottom: 70,
+    right: 15,
     justifyContent: "center",
 	},
 	paragraph: {
