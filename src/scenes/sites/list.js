@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-01-31AM'
+export const lastUpdate = '2021-02-03AM'
 
 export const sites = [
   {
@@ -65,6 +65,48 @@ export const sites = [
     ID: 94,
     name: '東スポＷeb',
     url: 'https://www.tokyo-sports.co.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 190,
+    name: 'NFL JAPAN',
+    url: 'https://nfljapan.com',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 189,
+    name: 'ベースボールチャンネル',
+    url: 'https://www.baseballchannel.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 188,
+    name: 'フットボリスタ',
+    url: 'https://www.footballista.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 187,
+    name: 'BLOGOLA',
+    url: 'https://blogola.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 186,
+    name: 'NBA SWEETDAYS',
+    url: 'https://nba-sweetdays.com',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 185,
+    name: 'AZrena',
+    url: 'https://azrena.com',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 184,
+    name: 'スポーツ・スポンサーシップ・ジャーナル',
+    url: 'https://www.sports-sponsorship.jp',
     caption: 'スポーツ'
   },
   {
