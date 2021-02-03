@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBar, Dimensions } from 'react-native';
 import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
@@ -10,6 +10,7 @@ import Storage from 'react-native-storage'
 import { IGNORED_TAGS } from 'react-native-render-html'
 import * as Haptics from 'expo-haptics';
 import { Button } from 'galio-framework';
+import AutoHeightWebView from 'react-native-autoheight-webview'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -81,33 +82,30 @@ export default class Article extends React.Component {
 										</View>
 									);
 								},
-								blockquote: (htmlAttribs, children, passProps, renderersProps, domNode) => {
+								blockquote: (htmlAttribs, children, renderersProps, passProps, domNode) => {
 									if (htmlAttribs.class == 'instagram-media') {
-										const instagramLink = htmlAttribs['data-instgrm-permalink']
+										const JS = '<script type="text/javascript" src="https://www.instagram.com/embed.js"></script>'
+										const html = domNodeToHTMLString(passProps.domNode)
+        						const source = html + JS
 										return (
-											<View
-												key={passProps.key}
-												style={{
-													width: "100%",
-													aspectRatio: 16.0 / 20.0,
-												}}>
-												<WebView
-													scrollEnabled={false}
-													source={{ uri: instagramLink}}
-												/>
-											</View>
+											<AutoHeightWebView
+												style={{ width: Dimensions.get('window').width - 15, marginTop: 35 }}
+												source={{ html: source}}
+												javaScriptEnabled={true}
+												scrollEnabled={false}
+										/>
 										)
 									} else if (htmlAttribs.class == 'twitter-tweet') {
 										const JS = '<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>'
-										// const source = JSON.stringify(children)
-										// const html = domNodeToHTMLString(children)
+										const html = domNodeToHTMLString(passProps.domNode)
+        						const source = html + JS
 										return (
-											<View style={styles.tweet}>
-												<Icon name="twitter" size={30} color="black"/>
-												{children}
-												{/*<Text>{source}</Text>*/}
-												{/*<Text>aaaaaaaaaaaaa{html}1111111111111111</Text>*/}
-											</View>
+											<AutoHeightWebView
+												style={{ width: Dimensions.get('window').width - 15, marginTop: 35 }}
+												source={{ html: source}}
+												javaScriptEnabled={true}
+												scrollEnabled={false}
+										/>
 										)
 									} else {
 										return (
