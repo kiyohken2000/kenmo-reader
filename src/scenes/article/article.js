@@ -93,7 +93,7 @@ export default class Article extends React.Component {
 												source={{ html: source}}
 												javaScriptEnabled={true}
 												scrollEnabled={false}
-										/>
+											/>
 										)
 									} else if (htmlAttribs.class == 'twitter-tweet') {
 										const JS = '<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>'
@@ -105,7 +105,7 @@ export default class Article extends React.Component {
 												source={{ html: source}}
 												javaScriptEnabled={true}
 												scrollEnabled={false}
-										/>
+											/>
 										)
 									} else {
 										return (
