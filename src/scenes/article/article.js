@@ -89,7 +89,7 @@ export default class Article extends React.Component {
         						const source = html + JS
 										return (
 											<AutoHeightWebView
-												style={{ width: Dimensions.get('window').width - 15, marginTop: 35 }}
+												style={{ width: Dimensions.get('window').width - 15, marginTop: 1 }}
 												source={{ html: source}}
 												javaScriptEnabled={true}
 												scrollEnabled={false}
@@ -101,7 +101,7 @@ export default class Article extends React.Component {
         						const source = html + JS
 										return (
 											<AutoHeightWebView
-												style={{ width: Dimensions.get('window').width - 15, marginTop: 35 }}
+												style={{ width: Dimensions.get('window').width - 15, marginTop: 1 }}
 												source={{ html: source}}
 												javaScriptEnabled={true}
 												scrollEnabled={false}
