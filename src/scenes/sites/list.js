@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-04AM'
+export const lastUpdate = '2021-02-05AM'
 
 export const sites = [
   {
@@ -569,6 +569,12 @@ export const sites = [
     ID: 178,
     name: '気になる、記になる…',
     url: 'https://taisy0.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 192,
+    name: 'ガルマックス',
+    url: 'https://garumax.com',
     caption: 'ガジェット'
   },
   {
