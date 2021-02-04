@@ -43,6 +43,24 @@ export const largeClassesStyles = {
   'smb-alert': {
     fontSize : 20
   },
+  'wp-caption-text': {
+    fontSize : 20
+  },
+  'cstmreba': {
+    display: "none"
+  },
+  'next-page': {
+    display: "none"
+  },
+  'next-title': {
+    display: "none"
+  },
+  'remove': {
+    display: "none"
+  },
+  'nextpage': {
+    display: "none"
+  },
 };
 
 export const middleClassesStyles = {
@@ -88,6 +106,24 @@ export const middleClassesStyles = {
   'smb-alert': {
     fontSize : 14
   },
+  'wp-caption-text': {
+    fontSize : 14
+  },
+  'cstmreba': {
+    display: "none"
+  },
+  'next-page': {
+    display: "none"
+  },
+  'next-title': {
+    display: "none"
+  },
+  'remove': {
+    display: "none"
+  },
+  'nextpage': {
+    display: "none"
+  },
 };
 
 const margin = 5
@@ -109,6 +145,16 @@ export const middleTagsStyles = {
     margin: margin,
     padding : padding
 	},
+  h4: {
+    fontSize: 16,
+    margin: margin,
+    padding : padding
+	},
+  h5: {
+    fontSize: 16,
+    margin: margin,
+    padding : padding
+	},
 	p: {
     fontSize: 14,
     margin: margin,
@@ -121,6 +167,9 @@ export const middleTagsStyles = {
     fontSize: 14
   },
   strong: {
+    fontSize: 14
+  },
+  figcaption: {
     fontSize: 14
   },
   img: {
@@ -144,6 +193,16 @@ export const largeTagsStyles = {
     margin: margin,
     padding : padding
 	},
+  h4: {
+    fontSize: 25,
+    margin: margin,
+    padding : padding
+	},
+  h5: {
+    fontSize: 25,
+    margin: margin,
+    padding : padding
+	},
 	p: {
     fontSize: 20,
     margin: margin,
@@ -156,6 +215,9 @@ export const largeTagsStyles = {
     fontSize: 20
   },
   strong: {
+    fontSize: 20
+  },
+  figcaption: {
     fontSize: 20
   },
   img: {
