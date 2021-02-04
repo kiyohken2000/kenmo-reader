@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-03AM'
+export const lastUpdate = '2021-02-04AM'
 
 export const sites = [
   {
@@ -59,6 +59,18 @@ export const sites = [
     ID: 111,
     name: '女子SPA！',
     url: 'https://joshi-spa.jp',
+    caption: 'エンタメ'
+  },
+  {
+    ID: 61,
+    name: 'GetNavi',
+    url: 'https://getnavi.jp',
+    caption: 'エンタメ、生活'
+  },
+  {
+    ID: 191,
+    name: '皇室 菊のカーテン',
+    url: 'https://imperialism.site',
     caption: 'エンタメ'
   },
   {
@@ -182,24 +194,6 @@ export const sites = [
     caption: 'ニュース'
   },
   {
-    ID: 86,
-    name: 'アゴラ',
-    url: 'http://agora-web.jp',
-    caption: '政治経済'
-  },
-  {
-    ID: 177,
-    name: '大前研一 ニュースの視点',
-    url: 'https://www.lt-empower.com/ohmae_blog',
-    caption: '政治経済'
-  },
-  {
-    ID: 176,
-    name: '経済学101',
-    url: 'https://econ101.jp',
-    caption: '政治経済'
-  },
-  {
     ID: 77,
     name: 'オトナライフ',
     url: 'https://otona-life.com',
@@ -254,6 +248,12 @@ export const sites = [
     caption: '生活'
   },
   {
+    ID: 35,
+    name: 'トキノドロップ',
+    url: 'https://tokinodrop.tokyo',
+    caption: '生活'
+  },
+  {
     ID: 71,
     name: '気になる芸能ニュースまとめ',
     url: 'https://unicorntomo.com',
@@ -294,6 +294,24 @@ export const sites = [
     name: 'SWEETEES',
     url: 'https://sweetees.info',
     caption: 'グルメ'
+  },
+  {
+    ID: 86,
+    name: 'アゴラ',
+    url: 'http://agora-web.jp',
+    caption: '政治経済'
+  },
+  {
+    ID: 177,
+    name: '大前研一 ニュースの視点',
+    url: 'https://www.lt-empower.com/ohmae_blog',
+    caption: '政治経済'
+  },
+  {
+    ID: 176,
+    name: '経済学101',
+    url: 'https://econ101.jp',
+    caption: '政治経済'
   },
   {
     ID: 62,
@@ -410,28 +428,16 @@ export const sites = [
     caption: 'ビジネス'
   },
   {
-    ID: 98,
-    name: 'ミャンマージャポン',
-    url: 'https://myanmarjapon.com/',
-    caption: 'ミャンマーの政治経済'
-  },
-  {
     ID: 17,
     name: '４０代からの挑戦！',
     url: 'https://40chousennsya.com',
     caption: 'ビジネス'
   },
   {
-    ID: 61,
-    name: 'GetNavi',
-    url: 'https://getnavi.jp',
-    caption: 'エンタメ、生活'
-  },
-  {
-    ID: 35,
-    name: 'トキノドロップ',
-    url: 'https://tokinodrop.tokyo',
-    caption: '生活'
+    ID: 98,
+    name: 'ミャンマージャポン',
+    url: 'https://myanmarjapon.com/',
+    caption: 'ミャンマーの政治経済'
   },
   {
     ID: 85,
@@ -566,6 +572,12 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
+    ID: 51,
+    name: 'ROOMIE',
+    url: 'https://www.roomie.jp',
+    caption: '生活、ガジェット'
+  },
+  {
     ID: 38,
     name: 'ARTJUKU',
     url: 'https://artjuku.com',
@@ -630,6 +642,24 @@ export const sites = [
     name: '自作ユーザーが解説するゲーミングPCガイド',
     url: 'https://g-pc.info',
     caption: 'PC'
+  },
+  {
+    ID: 3,
+    name: 'VIDEOCARDZ',
+    url: 'https://videocardz.com',
+    caption: 'PC'
+  },
+  {
+    ID: 4,
+    name: 'kitguru',
+    url: 'https://www.kitguru.net',
+    caption: 'PC'
+  },
+  {
+    ID: 5,
+    name: 'wccftech',
+    url: 'https://wccftech.com',
+    caption: 'PC、ガジェット'
   },
   {
     ID: 175,
@@ -770,12 +800,6 @@ export const sites = [
     caption: 'カメラ'
   },
   {
-    ID: 51,
-    name: 'ROOMIE',
-    url: 'https://www.roomie.jp',
-    caption: '生活、ガジェット'
-  },
-  {
     ID: 7,
     name: 'watch@2チャンネル',
     url: 'http://www.watch2chan.com',
@@ -854,22 +878,6 @@ export const sites = [
     url: 'https://baseballking.jp',
     caption: 'スポーツ'
   },
-  /*{
-    ID: 92,
-    name: 'ザ・ファッションポスト',
-    url: 'https://fashionpost.jp'
-  },*/
-  {
-    ID: 88,
-    name: 'おたぽる',
-    url: 'https://otapol.com',
-    caption: 'サブカル'
-  },
-  /*{
-    ID: 83,
-    name: '9ポスト',
-    url: 'https://9post.tv'
-  },*/
   {
     ID: 80,
     name: 'TOCANA',
@@ -883,9 +891,33 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
+    ID: 32,
+    name: '【厳選】洒落怖まとめ',
+    url: 'https://horror2ch.com',
+    caption: 'エンタメ'
+  },
+  {
+    ID: 33,
+    name: '洒落怖.com',
+    url: 'https://xn--f8tx20an6r.com',
+    caption: 'エンタメ'
+  },
+  {
     ID: 78,
     name: 'オモコロ',
     url: 'https://omocoro.jp',
+    caption: 'サブカル'
+  },
+  {
+    ID: 26,
+    name: '愛ちゃんのブログ',
+    url: 'https://aithan-japanese.com',
+    caption: 'サブカル'
+  },
+  {
+    ID: 88,
+    name: 'おたぽる',
+    url: 'https://otapol.com',
     caption: 'サブカル'
   },
   {
@@ -925,68 +957,17 @@ export const sites = [
     caption: '芸能、生活'
   },
   {
+    ID: 27,
+    name: '70年代80年代Fanブログ',
+    url: 'https://70-80fan.com',
+    caption: 'テレビ番組'
+  },
+  {
     ID: 65,
     name: 'WWD JAPAN',
     url: 'https://www.wwdjapan.com',
     caption: 'ファッション'
   },
-  {
-    ID: 63,
-    name: 'DIAMOND Chain Store',
-    url: 'https://diamond-rm.net',
-    caption: 'ビジネス'
-  },
-  /*{
-    ID: 60,
-    name: 'ひみつのどうくつ',
-    url: 'https://himitsu-ch.com'
-  },*/
-  {
-    ID: 1,
-    name: '菊ノ紋ニュース',
-    url: 'https://kikunomon.news',
-    caption: 'まとめサイト'
-  },
-  {
-    ID: 2,
-    name: '保守速報',
-    url: 'https://hosyusokuhou.jp',
-    caption: 'まとめサイト'
-  },
-  {
-    ID: 3,
-    name: 'VIDEOCARDZ',
-    url: 'https://videocardz.com',
-    caption: 'PC'
-  },
-  {
-    ID: 4,
-    name: 'kitguru',
-    url: 'https://www.kitguru.net',
-    caption: 'PC'
-  },
-  {
-    ID: 5,
-    name: 'wccftech',
-    url: 'https://wccftech.com',
-    caption: 'PC、ガジェット'
-  },
-  /*{
-    ID: 8,
-    name: 'やらおん！*',
-    url: 'http://yaraon-blog.com'
-  },*/
-  {
-    ID: 10,
-    name: 'BUZZmag (ばずまぐ)',
-    url: 'https://buzzmag.jp',
-    caption: 'まとめサイト'
-  },
-  /*{
-    ID: 12,
-    name: '9ポスト*',
-    url: 'https://9post.tv'
-  },*/
   {
     ID: 14,
     name: 'BUSHOO!JAPAN',
@@ -1012,21 +993,21 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
-    ID: 26,
-    name: '愛ちゃんのブログ',
-    url: 'https://aithan-japanese.com',
-    caption: 'サブカル'
-  },
-  {
-    ID: 27,
-    name: '70年代80年代Fanブログ',
-    url: 'https://70-80fan.com',
-    caption: 'テレビ番組'
-  },
-  {
     ID: 29,
     name: 'パチンコ屋の倒産を応援するブログ',
     url: 'https://pachitou.com',
+    caption: 'まとめサイト'
+  },
+  {
+    ID: 42,
+    name: 'マンガちゃんねる',
+    url: 'https://manga-ch.com',
+    caption: 'まとめサイト'
+  },
+  {
+    ID: 10,
+    name: 'BUZZmag (ばずまぐ)',
+    url: 'https://buzzmag.jp',
     caption: 'まとめサイト'
   },
   {
@@ -1042,28 +1023,45 @@ export const sites = [
     caption: '政治'
   },
   {
-    ID: 32,
-    name: '【厳選】洒落怖まとめ',
-    url: 'https://horror2ch.com',
-    caption: 'エンタメ'
+    ID: 54,
+    name: '共同通信',
+    url: 'https://www.kyodo.co.jp',
+    caption: '政治経済'
   },
   {
-    ID: 33,
-    name: '洒落怖.com',
-    url: 'https://xn--f8tx20an6r.com',
-    caption: 'エンタメ'
+    ID: 57,
+    name: '出島ニュース',
+    url: 'https://www.digima-news.com',
+    caption: 'ビジネス'
   },
+  {
+    ID: 63,
+    name: 'DIAMOND Chain Store',
+    url: 'https://diamond-rm.net',
+    caption: 'ビジネス'
+  },
+  /*{
+    ID: 60,
+    name: 'ひみつのどうくつ',
+    url: 'https://himitsu-ch.com'
+  },*/
+  /*{
+    ID: 1,
+    name: '菊ノ紋ニュース',
+    url: 'https://kikunomon.news',
+    caption: 'まとめサイト'
+  },*/
+  /*{
+    ID: 2,
+    name: '保守速報',
+    url: 'https://hosyusokuhou.jp',
+    caption: 'まとめサイト'
+  },*/
   /*{
     ID: 36,
     name: 'アノニマス ポスト',
     url: 'https://anonymous-post.mobi'
   },*/
-  {
-    ID: 42,
-    name: 'マンガちゃんねる',
-    url: 'https://manga-ch.com',
-    caption: 'まとめサイト'
-  },
   /*{
     ID: 45,
     name: 'あにまんch',
@@ -1134,17 +1132,25 @@ export const sites = [
     url: 'https://photo-studio9.com',
     caption: 'カメラ'
   },*/
-  {
-    ID: 54,
-    name: '共同通信',
-    url: 'https://www.kyodo.co.jp',
-    caption: '政治経済'
-  },
-  {
-    ID: 57,
-    name: '出島ニュース',
-    url: 'https://www.digima-news.com',
-    caption: 'ビジネス'
-  },
+  /*{
+    ID: 8,
+    name: 'やらおん！*',
+    url: 'http://yaraon-blog.com'
+  },*/
+  /*{
+    ID: 12,
+    name: '9ポスト*',
+    url: 'https://9post.tv'
+  },*/
+  /*{
+    ID: 92,
+    name: 'ザ・ファッションポスト',
+    url: 'https://fashionpost.jp'
+  },*/
+  /*{
+    ID: 83,
+    name: '9ポスト',
+    url: 'https://9post.tv'
+  },*/
 ]
 
