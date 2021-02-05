@@ -177,6 +177,41 @@ export const largeClassesStyles = {
     overflow: "hidden",
     margin: 10
   },
+  'combox': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'resbox': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'itemhead': {
+    backgroundColor: "#e6e6fa",
+    padding: 5,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+  },
+  'itembody': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
 };
 
 export const middleClassesStyles = {
@@ -348,6 +383,41 @@ export const middleClassesStyles = {
     overflow: "hidden",
   },
   't_b': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'combox': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'resbox': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'itemhead': {
+    backgroundColor: "#e6e6fa",
+    padding: 5,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+  },
+  'itembody': {
     backgroundColor: "#e6e6fa",
     padding: 10,
     borderRadius: 20,

@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-05AM'
+export const lastUpdate = '2021-02-06AM'
 
 export const sites = [
   {
@@ -993,12 +993,6 @@ export const sites = [
     caption: 'ゲーム'
   },
   {
-    ID: 29,
-    name: 'パチンコ屋の倒産を応援するブログ',
-    url: 'https://pachitou.com',
-    caption: 'まとめサイト'
-  },
-  {
     ID: 42,
     name: 'マンガちゃんねる',
     url: 'https://manga-ch.com',
@@ -1009,18 +1003,6 @@ export const sites = [
     name: 'BUZZmag (ばずまぐ)',
     url: 'https://buzzmag.jp',
     caption: 'まとめサイト'
-  },
-  {
-    ID: 30,
-    name: '小坪しんやのHP〜行橋市議会議員',
-    url: 'https://samurai20.jp',
-    caption: '政治'
-  },
-  {
-    ID: 31,
-    name: '遠藤健太郎オフィシャルブログ',
-    url: 'http://endokentaro.shinhoshu.com',
-    caption: '政治'
   },
   {
     ID: 54,
@@ -1050,6 +1032,24 @@ export const sites = [
     name: '菊ノ紋ニュース',
     url: 'https://kikunomon.news',
     caption: 'まとめサイト'
+  },*/
+  /*{
+    ID: 29,
+    name: 'パチンコ屋の倒産を応援するブログ',
+    url: 'https://pachitou.com',
+    caption: 'まとめサイト'
+  },*/
+  /*{
+    ID: 30,
+    name: '小坪しんやのHP〜行橋市議会議員',
+    url: 'https://samurai20.jp',
+    caption: '政治'
+  },*/
+  /*{
+    ID: 31,
+    name: '遠藤健太郎オフィシャルブログ',
+    url: 'http://endokentaro.shinhoshu.com',
+    caption: '政治'
   },*/
   /*{
     ID: 2,
