@@ -3,7 +3,6 @@ import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Linking, StatusBa
 import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
-import {iframe, table} from '@native-html/iframe-plugin';
 import { WebView } from 'react-native-webview';
 import AsyncStorage from '@react-native-community/async-storage';
 import Storage from 'react-native-storage'
@@ -61,26 +60,28 @@ export default class Article extends React.Component {
 							source={{ html:content }}
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
 							tagsStyles={defaultStyle ? largeTagsStyles : middleTagsStyles}
-							baseFontStyle={{ fontFamily: "Roboto" }}
+							baseFontStyle={{ fontFamily: "Roboto", fontSize:defaultStyle ? 20 : 14 }}
 							ignoredStyles={["font-family", "letter-spacing"]}
 							renderers={{
 								iframe: (htmlAttribs, passProps) => {
-									return (
-										<View
-											key={passProps.key}
-											style={{
-												width: "100%",
-												aspectRatio: 16.0 / 9.0,
-												marginTop: 16,
-												marginBottom: 16,
-											}}>
-											<WebView
-												scrollEnabled={false}
-												source={{ uri: htmlAttribs.src }}
-												style={{ flex: 1, width: "100%", aspectRatio: 16.0 / 9.0 }}
-											/>
-										</View>
-									);
+									if (htmlAttribs.class == 'youtube-player') {
+										return (
+											<View
+												key={passProps.key}
+												style={{
+													width: "100%",
+													aspectRatio: 16.0 / 9.0,
+													marginTop: 16,
+													marginBottom: 16,
+												}}>
+												<WebView
+													scrollEnabled={false}
+													source={{ uri: htmlAttribs.src }}
+													style={{ flex: 1, width: "100%", aspectRatio: 16.0 / 9.0 }}
+												/>
+											</View>
+										)
+									}
 								},
 								blockquote: (htmlAttribs, children, renderersProps, passProps, domNode) => {
 									if (htmlAttribs.class == 'instagram-media') {

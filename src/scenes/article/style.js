@@ -31,6 +31,13 @@ export const largeClassesStyles = {
   'size-medium': {
     alignSelf: "flex-start",
   },
+  'size-large': {
+    alignSelf: "flex-start",
+  },
+  'alignnone': {
+    margin: 0,
+    alignSelf: "flex-start",
+  },
   'icon_camera': {
     display: "none"
   },
@@ -60,6 +67,115 @@ export const largeClassesStyles = {
   },
   'nextpage': {
     display: "none"
+  },
+  'wsbl_twitter': {
+    display: "none"
+  },
+  'wsbl_facebook_like': {
+    display: "none"
+  },
+  'wsbl_hatena_users': {
+    display: "none"
+  },
+  'wsbl_hatena_button': {
+    display: "none"
+  },
+  'button_more': {
+    display: "none"
+  },
+  'amazon-item-box': {
+    display: "none"
+  },
+  'wp-block-cocoon-blocks-blogcard': {
+    display: "none"
+  },
+  'blogcard-content': {
+    display: "none"
+  },
+  'c-balloon__icon': {
+    display: "none"
+  },
+  'c-responsive-container-16-9': {
+    display: "none"
+  },
+  'yyi-rinker-links': {
+    display: "none"
+  },
+  'swell-block-postLink': {
+    display: "none"
+  },
+  'yyi-rinker-contents': {
+    display: "none"
+  },
+  'veu_socialSet': {
+    display: "none"
+  },
+  'veu_insertAds': {
+    display: "none"
+  },
+  'wp-embedded-content': {
+    display: "none"
+  },
+  'r-buy': {
+    display: "none"
+  },
+  'rakuten-buy-box': {
+    display: "none"
+  },
+  'adsbygoogle': {
+    display: "none"
+  },
+  'quads-ad1': {
+    display: "none"
+  },
+  'sheet-midashi': {
+    display: "none"
+  },
+  'at_adwbox': {
+    display: "none"
+  },
+  'cont_related': {
+    backgroundColor: "#00ffff",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#00ffff",
+    overflow: "hidden"
+  },
+  'wpap-tpl': {
+    display: "none"
+  },
+  'product-information': {
+    display: "none"
+  },
+  'sc-box': {
+    display: "none"
+  },
+  'matome-res': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  't_h': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+  },
+  't_b': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
   },
 };
 
@@ -94,6 +210,13 @@ export const middleClassesStyles = {
   'size-medium': {
     alignSelf: "flex-start",
   },
+  'size-large': {
+    alignSelf: "flex-start",
+  },
+  'alignnone': {
+    margin: 0,
+    alignSelf: "flex-start",
+  },
   'icon_camera': {
     display: "none"
   },
@@ -123,6 +246,115 @@ export const middleClassesStyles = {
   },
   'nextpage': {
     display: "none"
+  },
+  'wsbl_twitter': {
+    display: "none"
+  },
+  'wsbl_facebook_like': {
+    display: "none"
+  },
+  'wsbl_hatena_users': {
+    display: "none"
+  },
+  'wsbl_hatena_button': {
+    display: "none"
+  },
+  'button_more': {
+    display: "none"
+  },
+  'amazon-item-box': {
+    display: "none"
+  },
+  'wp-block-cocoon-blocks-blogcard': {
+    display: "none"
+  },
+  'blogcard-content': {
+    display: "none"
+  },
+  'c-balloon__icon': {
+    display: "none"
+  },
+  'c-responsive-container-16-9': {
+    display: "none"
+  },
+  'yyi-rinker-links': {
+    display: "none"
+  },
+  'swell-block-postLink': {
+    display: "none"
+  },
+  'yyi-rinker-contents': {
+    display: "none"
+  },
+  'veu_socialSet': {
+    display: "none"
+  },
+  'veu_insertAds': {
+    display: "none"
+  },
+  'wp-embedded-content': {
+    display: "none"
+  },
+  'r-buy': {
+    display: "none"
+  },
+  'rakuten-buy-box': {
+    display: "none"
+  },
+  'adsbygoogle': {
+    display: "none"
+  },
+  'quads-ad1': {
+    display: "none"
+  },
+  'sheet-midashi': {
+    display: "none"
+  },
+  'at_adwbox': {
+    display: "none"
+  },
+  'cont_related': {
+    backgroundColor: "00ffff",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "lightblue",
+    overflow: "hidden"
+  },
+  'wpap-tpl': {
+    display: "none"
+  },
+  'product-information': {
+    display: "none"
+  },
+  'sc-box': {
+    display: "none"
+  },
+  'matome-res': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  't_h': {
+    backgroundColor: "#e6e6fa",
+    padding: 5,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+  },
+  't_b': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
   },
 };
 
@@ -172,6 +404,9 @@ export const middleTagsStyles = {
   figcaption: {
     fontSize: 14
   },
+  li: {
+    fontSize: 14
+  },
   img: {
     alignSelf: "flex-start",
   },
@@ -218,6 +453,9 @@ export const largeTagsStyles = {
     fontSize: 20
   },
   figcaption: {
+    fontSize: 20
+  },
+  li: {
     fontSize: 20
   },
   img: {

@@ -542,12 +542,6 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
-    ID: 153,
-    name: '変デジ研究所',
-    url: 'https://lab.hendigi.com',
-    caption: 'ガジェット'
-  },
-  {
     ID: 150,
     name: 'COLA BLOG',
     url: 'https://www.cola507.com',
@@ -722,12 +716,6 @@ export const sites = [
     caption: 'ゲーム'
   },
   {
-    ID: 166,
-    name: 'のゲームブログ',
-    url: 'https://nogameb.com',
-    caption: 'ゲーム'
-  },
-  {
     ID: 164,
     name: 'ログカメラ',
     url: 'https://logcamera.com',
@@ -779,12 +767,6 @@ export const sites = [
     ID: 156,
     name: 'カメラと三脚とアルカスイスと ときどきMac',
     url: 'https://arcarrsgitzo.com',
-    caption: 'カメラ'
-  },
-  {
-    ID: 155,
-    name: 'デジカメジン',
-    url: 'https://www.digicamezine.com',
     caption: 'カメラ'
   },
   {
@@ -999,6 +981,18 @@ export const sites = [
     caption: 'ガジェット'
   },
   {
+    ID: 153,
+    name: '変デジ研究所',
+    url: 'https://lab.hendigi.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 166,
+    name: 'のゲームブログ',
+    url: 'https://nogameb.com',
+    caption: 'ゲーム'
+  },
+  {
     ID: 29,
     name: 'パチンコ屋の倒産を応援するブログ',
     url: 'https://pachitou.com',
@@ -1157,6 +1151,12 @@ export const sites = [
     ID: 83,
     name: '9ポスト',
     url: 'https://9post.tv'
+  },*/
+  /*{
+    ID: 155,
+    name: 'デジカメジン',
+    url: 'https://www.digicamezine.com',
+    caption: 'カメラ'
   },*/
 ]
 
