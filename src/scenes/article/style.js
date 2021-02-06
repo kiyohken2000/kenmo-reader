@@ -151,6 +151,18 @@ export const largeClassesStyles = {
   'sc-box': {
     display: "none"
   },
+  'appreach-info': {
+    display: "none"
+  },
+  'wp-block-cocoon-blocks-sticky-box': {
+    backgroundColor: "#808080",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#808080",
+    overflow: "hidden",
+    margin: 5,
+  },
   'matome-res': {
     backgroundColor: "#e6e6fa",
     padding: 10,
@@ -204,6 +216,15 @@ export const largeClassesStyles = {
     overflow: "hidden",
   },
   'itembody': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'tweetbox6': {
     backgroundColor: "#e6e6fa",
     padding: 10,
     borderRadius: 20,
@@ -365,6 +386,18 @@ export const middleClassesStyles = {
   'sc-box': {
     display: "none"
   },
+  'appreach-info': {
+    display: "none"
+  },
+  'wp-block-cocoon-blocks-sticky-box': {
+    backgroundColor: "#808080",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#808080",
+    overflow: "hidden",
+    margin: 5,
+  },
   'matome-res': {
     backgroundColor: "#e6e6fa",
     padding: 10,
@@ -418,6 +451,15 @@ export const middleClassesStyles = {
     overflow: "hidden",
   },
   'itembody': {
+    backgroundColor: "#e6e6fa",
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#e6e6fa",
+    overflow: "hidden",
+    margin: 10
+  },
+  'tweetbox6': {
     backgroundColor: "#e6e6fa",
     padding: 10,
     borderRadius: 20,

@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-06AM'
+export const lastUpdate = '2021-02-06PM'
 
 export const sites = [
   {
@@ -74,6 +74,18 @@ export const sites = [
     caption: 'エンタメ'
   },
   {
+    ID: 32,
+    name: '【厳選】洒落怖まとめ',
+    url: 'https://horror2ch.com',
+    caption: 'エンタメ'
+  },
+  {
+    ID: 33,
+    name: '洒落怖.com',
+    url: 'https://xn--f8tx20an6r.com',
+    caption: 'エンタメ'
+  },
+  {
     ID: 94,
     name: '東スポＷeb',
     url: 'https://www.tokyo-sports.co.jp',
@@ -119,6 +131,18 @@ export const sites = [
     ID: 184,
     name: 'スポーツ・スポンサーシップ・ジャーナル',
     url: 'https://www.sports-sponsorship.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 96,
+    name: 'サッカーキング',
+    url: 'https://www.soccer-king.jp',
+    caption: 'スポーツ'
+  },
+  {
+    ID: 95,
+    name: 'BASEBALL KING',
+    url: 'https://baseballking.jp',
     caption: 'スポーツ'
   },
   {
@@ -314,6 +338,12 @@ export const sites = [
     caption: '政治経済'
   },
   {
+    ID: 54,
+    name: '共同通信',
+    url: 'https://www.kyodo.co.jp',
+    caption: '政治経済'
+  },
+  {
     ID: 62,
     name: '電波新聞',
     url: 'https://dempa-digital.com',
@@ -431,6 +461,12 @@ export const sites = [
     ID: 17,
     name: '４０代からの挑戦！',
     url: 'https://40chousennsya.com',
+    caption: 'ビジネス'
+  },
+  {
+    ID: 57,
+    name: '出島ニュース',
+    url: 'https://www.digima-news.com',
     caption: 'ビジネス'
   },
   {
@@ -569,6 +605,18 @@ export const sites = [
     ID: 192,
     name: 'ガルマックス',
     url: 'https://garumax.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 19,
+    name: 'リブウェル！',
+    url: 'https://livewell-m.com',
+    caption: 'ガジェット'
+  },
+  {
+    ID: 24,
+    name: 'IPHONEな日々',
+    url: 'https://iphonenahibi.com',
     caption: 'ガジェット'
   },
   {
@@ -788,6 +836,12 @@ export const sites = [
     caption: 'カメラ'
   },
   {
+    ID: 14,
+    name: 'BUSHOO!JAPAN',
+    url: 'https://bushoojapan.com',
+    caption: '歴史'
+  },
+  {
     ID: 7,
     name: 'watch@2チャンネル',
     url: 'http://www.watch2chan.com',
@@ -847,181 +901,13 @@ export const sites = [
     url: 'https://actgameslog.net',
     caption: 'まとめサイト'
   },
-  /* 表示難あり */
-  {
-    ID: 97,
-    name: 'usedoor',
-    url: 'https://usedoor.jp',
-    caption: 'IT、生活'
-  },
-  {
-    ID: 96,
-    name: 'サッカーキング',
-    url: 'https://www.soccer-king.jp',
-    caption: 'スポーツ'
-  },
-  {
-    ID: 95,
-    name: 'BASEBALL KING',
-    url: 'https://baseballking.jp',
-    caption: 'スポーツ'
-  },
-  {
-    ID: 80,
-    name: 'TOCANA',
-    url: 'https://tocana.jp',
-    caption: 'エンタメ'
-  },
-  {
-    ID: 79,
-    name: 'wezzy',
-    url: 'https://wezz-y.com',
-    caption: 'エンタメ'
-  },
-  {
-    ID: 32,
-    name: '【厳選】洒落怖まとめ',
-    url: 'https://horror2ch.com',
-    caption: 'エンタメ'
-  },
-  {
-    ID: 33,
-    name: '洒落怖.com',
-    url: 'https://xn--f8tx20an6r.com',
-    caption: 'エンタメ'
-  },
-  {
-    ID: 78,
-    name: 'オモコロ',
-    url: 'https://omocoro.jp',
-    caption: 'サブカル'
-  },
-  {
-    ID: 26,
-    name: '愛ちゃんのブログ',
-    url: 'https://aithan-japanese.com',
-    caption: 'サブカル'
-  },
-  {
-    ID: 88,
-    name: 'おたぽる',
-    url: 'https://otapol.com',
-    caption: 'サブカル'
-  },
-  {
-    ID: 75,
-    name: '芸能スクープ、今旬ナビ！！',
-    url: 'http://imashun-navi.com',
-    caption: '芸能'
-  },
-  {
-    ID: 74,
-    name: '日刊SPA！',
-    url: 'https://nikkan-spa.jp',
-    caption: '芸能、生活'
-  },
-  {
-    ID: 72,
-    name: 'アサ芸プラス',
-    url: 'https://www.asagei.com',
-    caption: '芸能'
-  },
-  {
-    ID: 70,
-    name: '芸トピ',
-    url: 'https://geitopi.com',
-    caption: '芸能'
-  },
-  {
-    ID: 69,
-    name: '日刊サイゾー',
-    url: 'https://www.cyzo.com',
-    caption: '芸能、エンタメ'
-  },
-  {
-    ID: 68,
-    name: 'cyzo woman',
-    url: 'https://www.cyzowoman.com',
-    caption: '芸能、生活'
-  },
-  {
-    ID: 27,
-    name: '70年代80年代Fanブログ',
-    url: 'https://70-80fan.com',
-    caption: 'テレビ番組'
-  },
-  {
-    ID: 65,
-    name: 'WWD JAPAN',
-    url: 'https://www.wwdjapan.com',
-    caption: 'ファッション'
-  },
-  {
-    ID: 14,
-    name: 'BUSHOO!JAPAN',
-    url: 'https://bushoojapan.com',
-    caption: '歴史'
-  },
-  {
-    ID: 19,
-    name: 'リブウェル！',
-    url: 'https://livewell-m.com',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 21,
-    name: 'iTea4.0',
-    url: 'http://itea40.jp',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 24,
-    name: 'IPHONEな日々',
-    url: 'https://iphonenahibi.com',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 153,
-    name: '変デジ研究所',
-    url: 'https://lab.hendigi.com',
-    caption: 'ガジェット'
-  },
-  {
-    ID: 166,
-    name: 'のゲームブログ',
-    url: 'https://nogameb.com',
-    caption: 'ゲーム'
-  },
-  {
-    ID: 42,
-    name: 'マンガちゃんねる',
-    url: 'https://manga-ch.com',
-    caption: 'まとめサイト'
-  },
   {
     ID: 10,
     name: 'BUZZmag (ばずまぐ)',
     url: 'https://buzzmag.jp',
     caption: 'まとめサイト'
   },
-  {
-    ID: 54,
-    name: '共同通信',
-    url: 'https://www.kyodo.co.jp',
-    caption: '政治経済'
-  },
-  {
-    ID: 57,
-    name: '出島ニュース',
-    url: 'https://www.digima-news.com',
-    caption: 'ビジネス'
-  },
-  {
-    ID: 63,
-    name: 'DIAMOND Chain Store',
-    url: 'https://diamond-rm.net',
-    caption: 'ビジネス'
-  },
+  /* 表示難あり */
   /*{
     ID: 60,
     name: 'ひみつのどうくつ',
@@ -1097,6 +983,12 @@ export const sites = [
     caption: 'ビジネス'
   },*/
   /*{
+    ID: 63,
+    name: 'DIAMOND Chain Store',
+    url: 'https://diamond-rm.net',
+    caption: 'ビジネス'
+  },*/
+  /*{
     ID: 112,
     name: 'Real Sound',
     url: 'https://realsound.jp',
@@ -1125,6 +1017,12 @@ export const sites = [
     name: 'がじぇっとりっぷ',
     url: 'https://gadgetrip.jp',
     caption: 'PC'
+  },*/
+  /*{
+    ID: 97,
+    name: 'usedoor',
+    url: 'https://usedoor.jp',
+    caption: 'IT、生活'
   },*/
   /*{
     ID: 165,
@@ -1157,6 +1055,114 @@ export const sites = [
     name: 'デジカメジン',
     url: 'https://www.digicamezine.com',
     caption: 'カメラ'
+  },*/
+  /*{
+    ID: 80,
+    name: 'TOCANA',
+    url: 'https://tocana.jp',
+    caption: 'エンタメ'
+  },*/
+  /*{
+    ID: 79,
+    name: 'wezzy',
+    url: 'https://wezz-y.com',
+    caption: 'エンタメ'
+  },*/
+  /*{
+    ID: 78,
+    name: 'オモコロ',
+    url: 'https://omocoro.jp',
+    caption: 'サブカル'
+  },*/
+  /*{
+    ID: 26,
+    name: '愛ちゃんのブログ',
+    url: 'https://aithan-japanese.com',
+    caption: 'サブカル'
+  },*/
+  /*{
+    ID: 88,
+    name: 'おたぽる',
+    url: 'https://otapol.com',
+    caption: 'サブカル'
+  },*/
+  /*{
+    ID: 75,
+    name: '芸能スクープ、今旬ナビ！！',
+    url: 'http://imashun-navi.com',
+    caption: '芸能'
+  },*/
+  /*{
+    ID: 74,
+    name: '日刊SPA！',
+    url: 'https://nikkan-spa.jp',
+    caption: '芸能、生活'
+  },*/
+  /*{
+    ID: 72,
+    name: 'アサ芸プラス',
+    url: 'https://www.asagei.com',
+    caption: '芸能'
+  },*/
+  /*{
+    ID: 70,
+    name: '芸トピ',
+    url: 'https://geitopi.com',
+    caption: '芸能'
+  },*/
+  /*{
+    ID: 69,
+    name: '日刊サイゾー',
+    url: 'https://www.cyzo.com',
+    caption: '芸能、エンタメ'
+  },*/
+  /*{
+    ID: 68,
+    name: 'cyzo woman',
+    url: 'https://www.cyzowoman.com',
+    caption: '芸能、生活'
+  },*/
+  /*{
+    ID: 27,
+    name: '70年代80年代Fanブログ',
+    url: 'https://70-80fan.com',
+    caption: 'テレビ番組'
+  },*/
+  /*{
+    ID: 65,
+    name: 'WWD JAPAN',
+    url: 'https://www.wwdjapan.com',
+    caption: 'ファッション'
+  },*/
+  /*{
+    ID: 21,
+    name: 'iTea4.0',
+    url: 'http://itea40.jp',
+    caption: 'ガジェット'
+  },*/
+  /*{
+    ID: 42,
+    name: 'マンガちゃんねる',
+    url: 'https://manga-ch.com',
+    caption: 'まとめサイト'
+  },*/
+  /*{
+    ID: 193,
+    name: '香港ポスト',
+    url: 'https://hkmn.jp',
+    caption: '政治経済'
+  },*/
+  /*{
+    ID: 153,
+    name: '変デジ研究所',
+    url: 'https://lab.hendigi.com',
+    caption: 'ガジェット'
+  },*/
+  /*{
+    ID: 166,
+    name: 'のゲームブログ',
+    url: 'https://nogameb.com',
+    caption: 'ゲーム'
   },*/
 ]
 

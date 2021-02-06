@@ -46,6 +46,13 @@ export default class Sites extends React.Component {
 
 	render() {
     var viewSites = this.state.data
+    viewSites.sort(function(a, b) {
+      if (a.caption < b.caption) {
+          return -1;
+      } else {
+          return 1;
+      }
+   });
 		return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
