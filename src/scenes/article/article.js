@@ -10,6 +10,7 @@ import { IGNORED_TAGS } from 'react-native-render-html'
 import * as Haptics from 'expo-haptics';
 import { Button } from 'galio-framework';
 import AutoHeightWebView from 'react-native-autoheight-webview'
+import { sites } from '../sites/list'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -48,6 +49,9 @@ export default class Article extends React.Component {
 		const arrival = this.props.route.params.from
 		const date = this.props.route.params.date
 
+		const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+		const site = sites.find((v) => v.domain === domain);
+
 		return (
 			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
@@ -56,6 +60,7 @@ export default class Article extends React.Component {
 						<Text style={styles.paragraph}>
 							{title}
 						</Text>
+						<Text style={styles.site}>{site.name}</Text>
 						<HTML
 							source={{ html:content }}
 							classesStyles={defaultClass ? largeClassesStyles : middleClassesStyles}
@@ -222,6 +227,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#34495e',
+	},
+	site: {
+    fontSize: 17,
+    textAlign: 'right',
+		color: 'gray',
+		fontWeight: 'bold',
+		marginRight: 10,
 	},
 	tweet: {
 		backgroundColor: "lightblue",

@@ -3,6 +3,7 @@ import { Text, View, StatusBar, StyleSheet, TouchableOpacity } from 'react-nativ
 import { List, ListItem } from 'native-base'
 import Icon from 'react-native-vector-icons/Feather'
 import * as Haptics from 'expo-haptics'
+import { sites } from '../sites/list'
 
 class WPPost {
 	constructor(post) {
@@ -49,6 +50,12 @@ export default class Archive extends React.Component {
 		this.setState({items: []})
 	}
 
+	siteName(url) {
+		const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+		const site = sites.find((v) => v.domain === domain);
+		return site.name
+	}
+
 	render() {
 		var items = this.state.items;
 			items.sort(function(a, b) {
@@ -85,6 +92,7 @@ export default class Archive extends React.Component {
 									</TouchableOpacity>
 									<View style={styles.list}>
 										<Text style={styles.title}>{item.title}</Text>
+										<Text style={styles.site}>{this.siteName(item.url)}</Text>
 										<Text style={styles.date}>{item.date}</Text>
 									</View>
 								</View>
@@ -113,5 +121,10 @@ const styles = StyleSheet.create({
 	date: {
     fontSize: 11,
     textAlign: 'right',
-	}
+	},
+	site: {
+    fontSize: 15,
+    textAlign: 'right',
+		color: 'gray',
+	},
 });

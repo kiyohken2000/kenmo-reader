@@ -4,6 +4,7 @@ import { Card, List, ListItem, Thumbnail, Container, Content } from 'native-base
 import Button from 'components/Button'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
+import { sites } from '../sites/list'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -60,6 +61,12 @@ clearData() {
 	this.setState({items: []})
 }
 
+siteName(url) {
+	const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+	const site = sites.find((v) => v.domain === domain);
+	return site.name
+}
+
 render() {
 	var items = this.state.items;
 	items.sort(function(a, b) {
@@ -88,6 +95,7 @@ render() {
 								{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
 								<View style={styles.list}>
 									<Text style={styles.title}>{item.title}</Text>
+									<Text style={styles.site}>{this.siteName(item.url)}</Text>
 									<Text style={styles.date}>{item.date}</Text>
 								</View>
 							</ListItem>} >
@@ -111,9 +119,14 @@ const styles = StyleSheet.create({
 	},
 	list: {
 		flex: 1
-	},	
+	},
 	date: {
     fontSize: 11,
     textAlign: 'right',
-	}
+	},
+	site: {
+    fontSize: 15,
+    textAlign: 'right',
+		color: 'gray',
+	},
 });
