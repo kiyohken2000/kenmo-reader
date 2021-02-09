@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-07AM'
+export const lastUpdate = '2021-02-10AM'
 
 export const sites = [
   {
