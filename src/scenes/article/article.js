@@ -11,6 +11,7 @@ import * as Haptics from 'expo-haptics';
 import { Button } from 'galio-framework';
 import AutoHeightWebView from 'react-native-autoheight-webview'
 import { sites } from '../sites/list'
+import dbh from '../../../firebase'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -51,6 +52,9 @@ export default class Article extends React.Component {
 
 		const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
 		const site = sites.find((v) => v.domain === domain);
+
+		const date1 = new Date();
+		const formatedTitle = title.replace("/", " ")
 
 		return (
 			<View style={styles.container}>
@@ -147,6 +151,13 @@ export default class Article extends React.Component {
 											id: title,
 											data: archiveData,
 										});
+										dbh.collection("article").doc(formatedTitle).set({
+											title:title,
+											url: url,
+											date: date,
+											content: content,
+											date1: date1
+										})
 										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
 									}}
 								/>

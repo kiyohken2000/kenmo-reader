@@ -58,7 +58,7 @@ export default class Archive extends React.Component {
 
 	render() {
 		var items = this.state.items;
-			items.sort(function(a, b) {
+		items.sort(function(a, b) {
 				if (a.date > b.date) {
 						return -1;
 				} else {

@@ -11,6 +11,7 @@ import Sites from 'scenes/sites'
 import Request from 'scenes/request'
 import All from 'scenes/all'
 import Archive from 'scenes/archive'
+import Topic from 'scenes/topic'
 
 // import HeaderLeft from './HeaderLeft'
 import HeaderTitle from './HeaderTitle'
@@ -154,6 +155,29 @@ export const ArchiveNavigator = () => (
       component={Archive}
       options={({ navigation }) => ({
         title: 'Archive',
+      })}
+    />
+    <Stack.Screen
+      name="Article"
+      component={Article}
+      options={({ navigation }) => ({
+        title: 'Article',
+      })}
+    />
+  </Stack.Navigator>
+)
+
+export const TopicNavigator = () => (
+  <Stack.Navigator
+    initialRouteName="Topic"
+    headerMode="screen"
+    screenOptions={navigationProps}
+  >
+    <Stack.Screen
+      name="Topic"
+      component={Topic}
+      options={({ navigation }) => ({
+        title: 'Topic',
       })}
     />
     <Stack.Screen
