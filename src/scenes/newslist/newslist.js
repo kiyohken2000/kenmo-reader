@@ -19,9 +19,9 @@ class WPPost {
 	getThumbnail() {
 		var wpfm = this.post["_embedded"]["wp:featuredmedia"];
 		if (wpfm != undefined) {
-			return wpfm[0]["media_details"]["sizes"]["thumb150"]["source_url"];
+			return wpfm[0]["media_details"]["sizes"]["medium"]["source_url"];
 		} else {
-			return 'http://loumo.jp/wp/wp-content/themes/simplicity2/images/no-image.png';
+			return 'https://pbs.twimg.com/profile_images/1197638346517835776/fItoyeTR_400x400.jpg';
 		}
 	}
 }
