@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-10AM'
+export const lastUpdate = '2021-02-11AM'
 
 export const sites = [
   {
@@ -587,6 +587,13 @@ export const sites = [
     name: 'MIT Technology Review',
     url: 'https://www.technologyreview.jp',
     domain: 'www.technologyreview.jp',
+    caption: 'IT'
+  },
+  {
+    ID: 194,
+    name: 'The Next Platform',
+    url: 'https://www.nextplatform.com',
+    domain: 'www.nextplatform.com',
     caption: 'IT'
   },
   {
