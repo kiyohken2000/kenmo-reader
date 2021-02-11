@@ -70,7 +70,7 @@ siteName(url) {
 						contentContainerStyle={styles.scrollContentContainer}
 						refreshControl={
 							<RefreshControl
-								onRefresh={() => {this.getNews(), this.clearData()}}
+								onRefresh={() => {this.getTopic(), this.clearData()}}
 							/>
 						}
 					>
