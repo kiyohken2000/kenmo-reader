@@ -117,6 +117,18 @@ export default class Article extends React.Component {
 												scrollEnabled={false}
 											/>
 										)
+									} else if (htmlAttribs.class == 'tiktok-embed') {
+										const JS = '<script type="text/javascript" src="https://www.tiktok.com/embed.js"></script>'
+										const html = domNodeToHTMLString(passProps.domNode)
+        						const source = html + JS
+										return (
+											<AutoHeightWebView
+												style={{ width: Dimensions.get('window').width - 15, marginTop: 1 }}
+												source={{ html: source}}
+												javaScriptEnabled={true}
+												scrollEnabled={false}
+											/>
+										)
 									} else {
 										return (
 											<View style={styles.blockquote}>{children}</View>
