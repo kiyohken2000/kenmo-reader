@@ -1,10 +1,10 @@
 import React from 'react'
-import { Text, View, ScrollView, StatusBar, StyleSheet, RefreshControl } from 'react-native'
-import { Card, List, ListItem, Thumbnail, Container, Content } from 'native-base'
+import { Text, View, StatusBar, StyleSheet, RefreshControl, ScrollView, TouchableOpacity } from 'react-native'
 import Button from 'components/Button'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
 import { sites } from '../sites/list'
+import { Card } from 'galio-framework'
 
 const storage = new Storage({
   storageBackend: AsyncStorage,
@@ -64,7 +64,7 @@ clearData() {
 siteName(url) {
 	const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
 	const site = sites.find((v) => v.domain === domain);
-	return site.name
+	return site
 }
 
 render() {
@@ -80,26 +80,37 @@ render() {
 		<View style={styles.container}>
 			<StatusBar barStyle="light-content" />
 				<View style={styles.content}>
-					<List
+					<ScrollView
+						contentContainerStyle={styles.scrollContentContainer}
 						refreshControl={
 							<RefreshControl
 								onRefresh={() => {this.getNews(), this.clearData()}}
 							/>
 						}
-						dataArray={items}
-						renderRow={
-							(item) =>
-							<ListItem
-								onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date: item.date })}
-							>
-								{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
-								<View style={styles.list}>
-									<Text style={styles.title}>{item.title}</Text>
-									<Text style={styles.site}>{this.siteName(item.url)}</Text>
-									<Text style={styles.date}>{item.date}</Text>
-								</View>
-							</ListItem>} >
-					</List>
+					>
+						{
+							items.map((item, i) => {
+								return (
+									<TouchableOpacity
+										onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
+									>
+										<Card
+											key={i}
+											flex
+											style={styles.card}
+											shadow
+											avatar={this.siteName(item.url).avatar}
+											// image={this.siteName(item.url).avatar}
+											title={item.title}
+										>
+											<Text style={styles.site}>{this.siteName(item.url).name}</Text>
+											<Text style={styles.date}>{item.date}</Text>
+										</Card>
+									</TouchableOpacity>
+									);
+							})
+						}
+					</ScrollView>
 				</View>
 		</View>
 	);
@@ -124,9 +135,20 @@ const styles = StyleSheet.create({
     fontSize: 11,
     textAlign: 'right',
 	},
+	scrollContentContainer: {
+    paddingBottom: 1,
+  },
+	card: {
+    borderWidth: 3,
+    borderRadius: 20,
+    borderColor: '#fff',
+    padding: 10,
+		backgroundColor: 'white',
+		margin: 10,
+  },
 	site: {
     fontSize: 15,
-    textAlign: 'right',
+    textAlign: 'left',
 		color: 'gray',
 	},
 });

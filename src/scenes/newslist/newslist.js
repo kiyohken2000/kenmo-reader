@@ -1,9 +1,11 @@
 import React from 'react'
-import { Text, View, StatusBar, StyleSheet } from 'react-native'
+import { Text, View, StatusBar, StyleSheet, ScrollView, TouchableOpacity } from 'react-native'
 import { List, ListItem, Thumbnail, Container, Content } from 'native-base'
 import Spinner from 'react-native-loading-spinner-overlay'
 import Button from 'components/Button'
 import { colors } from 'theme'
+import { sites } from '../sites/list'
+import { Card } from 'galio-framework'
 
 class WPPost {
 	constructor(post) {
@@ -36,7 +38,6 @@ export default class NewsList extends React.Component {
 		};
 	}
 
-
 	componentDidMount() {
 		fetch(this.props.route.params.url + '/wp-json/wp/v2/posts?_embed')
 			.then((response) => response.json())
@@ -52,6 +53,12 @@ export default class NewsList extends React.Component {
 			});
 	}
 
+	siteName(url) {
+		const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+		const site = sites.find((v) => v.domain === domain);
+		return site
+	}
+
 	render() {
 		var items = this.state.items;
 		return (
@@ -64,20 +71,30 @@ export default class NewsList extends React.Component {
             overlayColor="rgba(0,0,0,0.5)"
         	/>
 					<View style={styles.content}>
-						<List
-							dataArray={items}
-							renderRow={
-								(item) =>
-								<ListItem
-									onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
-								>
-									{/*<Thumbnail square size={80} source={{ uri: item.thumbnail }} />*/}
-									<View style={styles.list}>
-										<Text style={styles.title}>{item.title}</Text>
-										<Text style={styles.date}>{item.date}</Text>
-									</View>
-								</ListItem>} >
-						</List>
+						<ScrollView contentContainerStyle={styles.scrollContentContainer}>
+							{
+								items.map((item, i) => {
+									return (
+										<TouchableOpacity
+											onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
+										>
+											<Card
+												key={i}
+												flex
+												style={styles.card}
+												shadow
+												avatar={this.siteName(item.url).avatar}
+												// image={this.siteName(item.url).avatar}
+												title={item.title}
+											>
+												<Text style={styles.site}>{this.siteName(item.url).name}</Text>
+												<Text style={styles.date}>{item.date}</Text>
+											</Card>
+										</TouchableOpacity>
+										);
+								})
+							}
+						</ScrollView>
 					</View>
 			</View>
 		);
@@ -101,5 +118,21 @@ const styles = StyleSheet.create({
 	date: {
     fontSize: 11,
     textAlign: 'right',
-	}
+	},
+	scrollContentContainer: {
+    paddingBottom: 1,
+  },
+	card: {
+    borderWidth: 3,
+    borderRadius: 20,
+    borderColor: '#fff',
+    padding: 10,
+		backgroundColor: 'white',
+		margin: 10,
+  },
+	site: {
+    fontSize: 15,
+    textAlign: 'left',
+		color: 'gray',
+	},
 });

@@ -4,7 +4,7 @@ import { Card, ListItem, Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Feather'
 import Storage from 'react-native-storage'
 import AsyncStorage from '@react-native-community/async-storage'
-import { sites, lastUpdate} from './list'
+import { sites, lastUpdate } from './list'
 import * as Haptics from 'expo-haptics';
 
 const storage = new Storage({
