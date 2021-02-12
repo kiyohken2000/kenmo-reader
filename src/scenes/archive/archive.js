@@ -13,6 +13,7 @@ class WPPost {
 		this.content = post.content;
 		this.date = post.date;
 		this.url = post.url;
+		this.thumbnail = post.thumbnail;
 	}
 }
 
@@ -105,7 +106,7 @@ export default class Archive extends React.Component {
 													style={styles.card}
 													shadow
 													avatar={this.siteName(item.url).avatar}
-													// image={this.siteName(item.url).avatar}
+													image={item.thumbnail}
 													title={item.title}
 												>
 													<Text style={styles.site}>{this.siteName(item.url).name}</Text>

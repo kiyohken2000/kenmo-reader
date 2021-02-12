@@ -19,8 +19,26 @@ class WPPost {
 		this.title = post.title.rendered;
 		this.content = post.content.rendered;
 		this.date = post.date;
+		this.thumbnail = this.getThumbnail();
 		this.url = post.link;
 	}
+
+	getThumbnail() {
+		const domain = this.post.link.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+		const site = sites.find((v) => v.domain === domain);
+		try {
+			var wpfm = this.post["_embedded"]["wp:featuredmedia"][0]["media_details"]["sizes"]["medium"]["source_url"];
+			return wpfm
+		} catch(e) {
+		try {
+			var wpfm = this.post["_embedded"]["wp:featuredmedia"][0]["media_details"]["sizes"]["thumb240"]["source_url"];
+			return wpfm
+		} catch(e) {
+			return site.avatar
+			}
+		}
+	}
+
 }
 
 export default class All extends React.Component {
@@ -92,7 +110,7 @@ render() {
 							items.map((item, i) => {
 								return (
 									<TouchableOpacity
-										onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
+										onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date, thumbnail:item.thumbnail })}
 									>
 										<Card
 											key={i}
@@ -100,7 +118,7 @@ render() {
 											style={styles.card}
 											shadow
 											avatar={this.siteName(item.url).avatar}
-											// image={this.siteName(item.url).avatar}
+											image={item.thumbnail}
 											title={item.title}
 										>
 											<Text style={styles.site}>{this.siteName(item.url).name}</Text>

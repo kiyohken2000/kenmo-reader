@@ -14,6 +14,7 @@ class WPPost {
 		this.content = post.content;
 		this.date = post.date;
 		this.url = post.url;
+		this.thumbnail = post.thumbnail;
 	}
 }
 
@@ -78,7 +79,7 @@ siteName(url) {
 							items.map((item, i) => {
 								return (
 									<TouchableOpacity
-										onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
+										onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date, thumbnail:item.thumbnail })}
 									>
 										<Card
 											key={i}
@@ -86,7 +87,7 @@ siteName(url) {
 											style={styles.card}
 											shadow
 											avatar={this.siteName(item.url).avatar}
-											// image={this.siteName(item.url).avatar}
+											image={item.thumbnail}
 											title={item.title}
 										>
 											<Text style={styles.site}>{this.siteName(item.url).name}</Text>

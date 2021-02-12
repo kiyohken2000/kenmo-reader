@@ -49,6 +49,7 @@ export default class Article extends React.Component {
 		const title = this.props.route.params.title
 		const arrival = this.props.route.params.from
 		const date = this.props.route.params.date
+		const thumbnail = this.props.route.params.thumbnail
 
 		const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
 		const site = sites.find((v) => v.domain === domain);
@@ -156,7 +157,8 @@ export default class Article extends React.Component {
 											title: title,
 											url: url,
 											date: date,
-											content: content
+											content: content,
+											thumbnail :thumbnail
 										}
 										global.storage.save({
 											key: 'archive',
@@ -168,7 +170,8 @@ export default class Article extends React.Component {
 											url: url,
 											date: date,
 											content: content,
-											date1: date1
+											date1: date1,
+											thumbnail :thumbnail
 										})
 										Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
 									}}

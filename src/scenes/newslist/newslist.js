@@ -13,19 +13,26 @@ class WPPost {
 		this.title = post.title.rendered;
 		this.content = post.content.rendered;
 		this.date = post.date;
-		// this.thumbnail = this.getThumbnail();
+		this.thumbnail = this.getThumbnail();
 		this.url = post.link;
 	}
 
-
 	getThumbnail() {
-		var wpfm = this.post["_embedded"]["wp:featuredmedia"];
-		if (wpfm != undefined) {
-			return wpfm[0]["media_details"]["sizes"]["medium"]["source_url"];
-		} else {
-			return 'https://pbs.twimg.com/profile_images/1197638346517835776/fItoyeTR_400x400.jpg';
+		const domain = this.post.link.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
+		const site = sites.find((v) => v.domain === domain);
+		try {
+			var wpfm = this.post["_embedded"]["wp:featuredmedia"][0]["media_details"]["sizes"]["medium"]["source_url"];
+			return wpfm
+		} catch(e) {
+		try {
+			var wpfm = this.post["_embedded"]["wp:featuredmedia"][0]["media_details"]["sizes"]["thumb240"]["source_url"];
+			return wpfm
+		} catch(e) {
+			return site.avatar
+			}
 		}
 	}
+
 }
 
 export default class NewsList extends React.Component {
@@ -76,7 +83,7 @@ export default class NewsList extends React.Component {
 								items.map((item, i) => {
 									return (
 										<TouchableOpacity
-											onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date })}
+											onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, from: 'arrival', date:item.date, thumbnail:item.thumbnail })}
 										>
 											<Card
 												key={i}
@@ -84,7 +91,7 @@ export default class NewsList extends React.Component {
 												style={styles.card}
 												shadow
 												avatar={this.siteName(item.url).avatar}
-												// image={this.siteName(item.url).avatar}
+												image={item.thumbnail}
 												title={item.title}
 											>
 												<Text style={styles.site}>{this.siteName(item.url).name}</Text>
