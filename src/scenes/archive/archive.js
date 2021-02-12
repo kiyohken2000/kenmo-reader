@@ -98,7 +98,7 @@ export default class Archive extends React.Component {
 										</View>
 										<View style={{flex: 6}}>
 											<TouchableOpacity
-												onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title })}
+												onPress={() => this.props.navigation.navigate('Article', { url: item.url, content:item.content, title:item.title, thumbnail:item.thumbnail })}
 											>
 												<Card
 													key={i}
