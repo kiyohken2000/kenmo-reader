@@ -343,7 +343,7 @@ export const sites = [
     url: 'https://gingerweb.jp',
     domain: 'gingerweb.jp',
     caption: '生活',
-    avatar: ''
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fgingerweb.jpg?alt=media&token=15660d90-33ed-4f44-8594-a706dd8c9f7d'
   },
   {
     ID: 118,
