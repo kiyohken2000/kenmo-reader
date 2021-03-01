@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-02-12AM'
+export const lastUpdate = '2021-03-02AM'
 
 export const sites = [
   {
@@ -1152,6 +1152,15 @@ export const sites = [
     caption: 'ゲーム',
     avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fps4pro.png?alt=media&token=f9279ad5-daa2-4175-8c7a-3d5e7c513bbe',
     avatarlocal: '../../../assets/avatar/ps4pro.png'
+  },
+  {
+    ID: 195,
+    name: 'DSOGaming',
+    url: 'https://www.dsogaming.com',
+    domain: 'www.dsogaming.com',
+    caption: 'ゲーム',
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fdsogaming.jpg?alt=media&token=ed246d8b-85a6-4a26-b3b7-062e3495bb7d',
+    avatarlocal: '../../../assets/avatar/dsogaming.jpg'
   },
   {
     ID: 164,
