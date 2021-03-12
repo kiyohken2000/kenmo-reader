@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-03-02AM'
+export const lastUpdate = '2021-03-12PM'
 
 export const sites = [
   {
@@ -126,6 +126,15 @@ export const sites = [
     caption: 'エンタメ',
     avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fxn--f8tx20an6r.png?alt=media&token=5c399c21-d9a8-4e8e-9d65-7ccabba8138a',
     avatarlocal: '../../../assets/avatar/xn--f8tx20an6r.png'
+  },
+  {
+    ID: 196,
+    name: 'LogTube',
+    url: 'https://logtube.jp',
+    domain: 'logtube.jp',
+    caption: 'エンタメ',
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Flogtube.jpg?alt=media&token=1426a449-ddc9-4420-9626-0671af247f2b',
+    avatarlocal: '../../../assets/avatar/rocketnews24.jpg'
   },
   {
     ID: 94,
