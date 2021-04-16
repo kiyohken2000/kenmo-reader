@@ -4,7 +4,7 @@ import HTML, {domNodeToHTMLString} from 'react-native-render-html';
 import Icon from 'react-native-vector-icons/Feather';
 import { largeClassesStyles, middleClassesStyles, middleTagsStyles, largeTagsStyles } from './style';
 import { WebView } from 'react-native-webview';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import Storage from 'react-native-storage'
 import { IGNORED_TAGS } from 'react-native-render-html'
 import * as Haptics from 'expo-haptics';

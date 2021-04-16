@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View, StatusBar, StyleSheet, RefreshControl, ScrollView, TouchableOpacity } from 'react-native'
 import Button from 'components/Button'
 import Storage from 'react-native-storage'
-import AsyncStorage from '@react-native-community/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { sites } from '../sites/list'
 import { Card } from 'galio-framework'
 
