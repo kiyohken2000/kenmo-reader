@@ -154,6 +154,12 @@ export const largeClassesStyles = {
   'appreach-info': {
     display: "none"
   },
+  'widget_diver_widget_newpost': {
+    display: "none"
+  },
+  'sc_frame_title': {
+    display: "none"
+  },
   'wp-block-cocoon-blocks-sticky-box': {
     backgroundColor: "#808080",
     padding: 10,
@@ -387,6 +393,12 @@ export const middleClassesStyles = {
     display: "none"
   },
   'appreach-info': {
+    display: "none"
+  },
+  'widget_diver_widget_newpost': {
+    display: "none"
+  },
+  'sc_frame_title': {
     display: "none"
   },
   'wp-block-cocoon-blocks-sticky-box': {

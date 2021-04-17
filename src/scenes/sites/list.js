@@ -1,4 +1,4 @@
-export const lastUpdate = '2021-03-13AM'
+export const lastUpdate = '2021-04-18AM'
 
 export const sites = [
   {
@@ -101,13 +101,13 @@ export const sites = [
     avatarlocal: '../../../assets/avatar/getnavi.jpg'
   },
   {
-    ID: 191,
-    name: '皇室 菊のカーテン',
-    url: 'https://imperialism.site',
-    domain: 'imperialism.site',
+    ID: 198,
+    name: 'Share News Japan',
+    url: 'https://sn-jp.com',
+    domain: 'sn-jp.com',
     caption: 'エンタメ',
-    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fimperialism.png?alt=media&token=02d45698-297e-488e-9a35-44193f674443',
-    avatarlocal: '../../../assets/avatar/imperialism.png'
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fsharenewsjapan.jpg?alt=media&token=b3631c19-a8a7-4858-94ff-40f24e214f73',
+    avatarlocal: '../../../assets/avatar/sharenewsjapan.jpg'
   },
   {
     ID: 32,
@@ -1556,6 +1556,15 @@ export const sites = [
     name: 'wezzy',
     url: 'https://wezz-y.com',
     caption: 'エンタメ'
+  },*/
+  /*{
+    ID: 191,
+    name: '皇室 菊のカーテン',
+    url: 'https://imperialism.site',
+    domain: 'imperialism.site',
+    caption: 'エンタメ',
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/kenmo-reader.appspot.com/o/avatar%2Fimperialism.png?alt=media&token=02d45698-297e-488e-9a35-44193f674443',
+    avatarlocal: '../../../assets/avatar/imperialism.png'
   },*/
   /*{
     ID: 78,
