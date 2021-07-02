@@ -40,10 +40,11 @@
     },
     "android": {
       "package": "net.votepurchase.kenmoreader",
-      "versionCode": 13,
+      "versionCode": 14,
       "permissions": [
         "VIBRATE",
-        "MANAGE_EXTERNAL_STORAGE"
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
       ]
     },
     "description": ""
