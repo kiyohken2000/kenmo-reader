@@ -26,11 +26,11 @@ const navigationProps = {
   headerTintColor: 'white',
   headerStyle: { backgroundColor: colors.darkPurple },
   headerTitleStyle: { fontSize: 18 },
-  gestureEnabled: true,
+  /*gestureEnabled: true,
   gestureDirection: 'horizontal',
   gestureResponseDistance: {
     horizontal: 300,
-  },
+  },*/
 }
 
 // ------------------------------------
