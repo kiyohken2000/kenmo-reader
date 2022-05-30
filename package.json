@@ -25,6 +25,7 @@
     "expo-cli": "^3.20.0",
     "expo-font": "~10.1.0",
     "expo-haptics": "~11.2.0",
+    "expo-updates": "~0.13.1",
     "firebase": "8.2.3",
     "galio-framework": "^0.7.1",
     "global": "^4.4.0",
